@@ -97,7 +97,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 638529607377410009
+  platformSettingsDirtyTick: 638529616280769907
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -123,7 +123,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Character1_Frame_0
     originalName: 
-    pivot: {x: 0.48417014, y: 0.4961864}
+    pivot: {x: 0.4449702, y: 0.5348178}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -132,7 +132,7 @@ ScriptedImporter:
       y: 4
       width: 52
       height: 54
-    spriteID: dc1f90f98d593b14eb1effec75076f53
+    spriteID: fbbeef22ca0673142b526da119f59fff
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -143,7 +143,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: Character1_Frame_1
     originalName: 
-    pivot: {x: 0.48775002, y: 0.4970699}
+    pivot: {x: 0.4413903, y: 0.53738177}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -152,7 +152,7 @@ ScriptedImporter:
       y: 66
       width: 52
       height: 54
-    spriteID: 686260dbaf90de24caea65160792b5d7
+    spriteID: 7c5b761209f90ff4da725ae990d41967
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -173,19 +173,19 @@ ScriptedImporter:
     - name: Character1_Frame_0
       frameIndex: 0
       cellRect:
-        x: 23
-        y: 19
+        x: 7
+        y: 5
         width: 52
         height: 54
-      spriteId: dc1f90f98d593b14eb1effec75076f53
+      spriteId: fbbeef22ca0673142b526da119f59fff
     - name: Character1_Frame_1
       frameIndex: 1
       cellRect:
-        x: 23
-        y: 21
+        x: 7
+        y: 3
         width: 52
         height: 54
-      spriteId: 686260dbaf90de24caea65160792b5d7
+      spriteId: 7c5b761209f90ff4da725ae990d41967
     linkedCells: []
     parentIndex: -1
   platformSettings:
@@ -216,4 +216,4 @@ ScriptedImporter:
   generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
-  canvasSize: {x: 128, y: 95}
+  canvasSize: {x: 64, y: 64}
