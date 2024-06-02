@@ -6,7 +6,7 @@ public class Bomb : MonoBehaviour
 {
     public float radius = 2.0f;
     public float damage = 100f;
-    public float coolDown = 2.0f;
+    public float coolDown = 1.0f;
     public LayerMask targetMask;
 
     private Gamemanager gameManager;
