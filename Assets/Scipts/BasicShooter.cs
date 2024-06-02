@@ -61,7 +61,7 @@ public class BasicShooter : MonoBehaviour
     {
         if (animator != null)
         {
-            animator.SetBool("Shoot", isShooting); // Set the boolean parameter to control the animation
+            animator.SetBool("Shoot", isShooting);
         }
     }
 }

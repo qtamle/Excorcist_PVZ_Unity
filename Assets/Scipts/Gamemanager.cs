@@ -42,10 +42,15 @@ public class Gamemanager : MonoBehaviour
 
                 if (Input.GetMouseButton(0))
                 {
-                    Instantiate(currentPlant, hit.collider.transform.position, Quaternion.identity);
+                    GameObject plantedObject = Instantiate(currentPlant, hit.collider.transform.position, Quaternion.identity);
                     tileComponent.SetHasPlant(true); // Cập nhật trạng thái có cây của ô
                     currentPlant = null;
                     currentPlantSprite = null;
+
+                    if (plantedObject.GetComponent<Bomb>() != null)
+                    {
+                        plantedObject.GetComponent<Bomb>().StartExplosionCountdown();
+                    }
                 }
             }
         }

@@ -63,7 +63,7 @@ public class Zombie : MonoBehaviour
             transform.position -= new Vector3 (speed, 0,0);
     }
 
-    public void Hit(int damage, bool freeze)
+    public void Hit(float damage, bool freeze)
     {
         health -= damage;
 
