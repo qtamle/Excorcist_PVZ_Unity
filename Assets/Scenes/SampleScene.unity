@@ -7920,7 +7920,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantSprite: {fileID: -6715595053930913549, guid: 65991d25932f6154f8f6fed6224431e6, type: 3}
-  plantObject: {fileID: 4657987155920169668, guid: 0099ccb41b3352b40af3d6154b306e2d, type: 3}
+  plantObject: {fileID: 7886265825666194120, guid: 7ae6b68c3521ef0409dd61a627165132, type: 3}
   icon: {fileID: 805630874}
   price: 150
   priceText: {fileID: 2117716597}
