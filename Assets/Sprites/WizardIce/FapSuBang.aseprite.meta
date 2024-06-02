@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 16
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -77,6 +77,7 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
@@ -89,13 +90,14 @@ ScriptedImporter:
     defaultPivotSpace: 0
     defaultPivotAlignment: 7
     customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
     spritePadding: 0
     generateModelPrefab: 1
     generateAnimationClips: 1
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638529465608959558
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +123,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: FapSuBang_Frame_0
     originalName: 
-    pivot: {x: 0.90909094, y: -1.846154}
+    pivot: {x: 0.56985766, y: 0.45863578}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,7 +143,7 @@ ScriptedImporter:
     uvTransform: {x: 51, y: 43}
   - name: FapSuBang_Frame_1
     originalName: 
-    pivot: {x: 0.6451613, y: -1.92}
+    pivot: {x: 0.40087467, y: 0.32771972}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,7 +163,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 209}
   - name: FapSuBang_Frame_2
     originalName: 
-    pivot: {x: 0.6451613, y: -1.92}
+    pivot: {x: 0.41149607, y: 0.31015873}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -181,7 +183,7 @@ ScriptedImporter:
     uvTransform: {x: 81, y: 4}
   - name: FapSuBang_Frame_3
     originalName: 
-    pivot: {x: 0.6666667, y: -1.92}
+    pivot: {x: 0.40725332, y: 0.29259828}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -201,7 +203,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 143}
   - name: FapSuBang_Frame_4
     originalName: 
-    pivot: {x: 0.70000005, y: -1.92}
+    pivot: {x: 0.40732816, y: 0.32332885}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -221,7 +223,7 @@ ScriptedImporter:
     uvTransform: {x: 43, y: 209}
   - name: FapSuBang_Frame_5
     originalName: 
-    pivot: {x: 0.6538462, y: -1.92}
+    pivot: {x: 0.4385637, y: 0.32332915}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -241,7 +243,7 @@ ScriptedImporter:
     uvTransform: {x: 47, y: 110}
   - name: FapSuBang_Frame_6
     originalName: 
-    pivot: {x: 0.65625, y: -1.92}
+    pivot: {x: 0.39558947, y: 0.30576906}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -261,7 +263,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 176}
   - name: FapSuBang_Frame_7
     originalName: 
-    pivot: {x: 0.33333334, y: -1.548387}
+    pivot: {x: 0.19654106, y: 0.2536688}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -281,7 +283,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: FapSuBang_Frame_8
     originalName: 
-    pivot: {x: 0.5714286, y: -1.92}
+    pivot: {x: 0.348789, y: 0.2794284}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -301,7 +303,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 110}
   - name: FapSuBang_Frame_9
     originalName: 
-    pivot: {x: 0.5555556, y: -1.92}
+    pivot: {x: 0.3512954, y: 0.30576873}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -321,7 +323,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 77}
   - name: FapSuBang_Frame_10
     originalName: 
-    pivot: {x: 0.51282054, y: -1.846154}
+    pivot: {x: 0.31301576, y: 0.3235563}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -438,7 +440,44 @@ ScriptedImporter:
       spriteId: bbe9c687a3a14bb42a57ff04cad7eaf3
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 128, y: 128}
