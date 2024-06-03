@@ -11287,11 +11287,7 @@ MonoBehaviour:
   zombie: {fileID: 2694313112654321143, guid: 2158fe37566e901479ed5afe60ddc922, type: 3}
   zombieTypes:
   - type: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
-    probability: 4
-  - type: {fileID: 11400000, guid: 15843869bb364104db036b5a45a0943e, type: 2}
-    probability: 2
-  - type: {fileID: 11400000, guid: f205f5d836fd72444a8c97e1b4be2303, type: 2}
-    probability: 1
+    probability: 5
   zombieMax: 20
   zombiesSpawned: 0
   progressBar: {fileID: 235240680}

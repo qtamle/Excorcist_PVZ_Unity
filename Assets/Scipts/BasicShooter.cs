@@ -49,9 +49,7 @@ public class BasicShooter : MonoBehaviour
     void Shoot()
     {
         if (!canShoot)
-        {
             return;
-        }
         canShoot = false;
         Invoke("ResetCooldown", cooldown);
         GameObject myBullet = Instantiate(bullet, shootOrigin.position, Quaternion.identity);

@@ -121,7 +121,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07752475, y: 0.12328386}
+  m_Offset: {x: -0.25464922, y: 0.076570004}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.56985766, y: 0.45863578}
@@ -132,7 +132,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.188812, y: 1.45263}
+  m_Size: {x: 1.0832502, y: 1.6590285}
   m_EdgeRadius: 0
 --- !u!114 &1033278690350015623
 MonoBehaviour:
@@ -233,8 +233,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7003603050802146239, guid: 81563e42dec1630438f3a8401f330fa4, type: 3}
   shootOrigin: {fileID: 4613272554462824544}
-  cooldown: 2.5
-  range: 6
+  cooldown: 3
+  range: 11
   shootMask:
     serializedVersion: 2
     m_Bits: 128

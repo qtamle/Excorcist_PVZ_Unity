@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 6585671390701343541}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.43798053, y: -0.5535318, z: 0}
+  m_LocalPosition: {x: 0.493, y: -0.662, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 7003603050802146239, guid: d5082518202a4af4a84966868425e0f9, type: 3}
   shootOrigin: {fileID: 4613272554462824544}
-  cooldown: 2
+  cooldown: 2.5
   range: 11
   shootMask:
     serializedVersion: 2
@@ -234,7 +234,7 @@ MonoBehaviour:
   bullet: {fileID: 7003603050802146239, guid: d5082518202a4af4a84966868425e0f9, type: 3}
   shootOrigin: {fileID: 4613272554462824544}
   cooldown: 2.5
-  range: 6
+  range: 11
   shootMask:
     serializedVersion: 2
     m_Bits: 128
