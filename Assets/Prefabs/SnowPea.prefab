@@ -148,7 +148,7 @@ MonoBehaviour:
   bullet: {fileID: 7003603050802146239, guid: 81563e42dec1630438f3a8401f330fa4, type: 3}
   shootOrigin: {fileID: 4613272554462824544}
   cooldown: 2.5
-  range: 12
+  range: 11
   shootMask:
     serializedVersion: 2
     m_Bits: 128
