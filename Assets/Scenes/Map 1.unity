@@ -1834,7 +1834,7 @@ Transform:
   m_GameObject: {fileID: 369443507}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.04, y: 2.49, z: 0}
+  m_LocalPosition: {x: 2.04, y: 2.25, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4483,7 +4483,7 @@ MonoBehaviour:
   tileMask:
     serializedVersion: 2
     m_Bits: 64
-  suns: 150
+  suns: 9999
   sunText: {fileID: 1528265484}
   sunMask:
     serializedVersion: 2
@@ -11284,7 +11284,7 @@ MonoBehaviour:
   - {fileID: 476431755}
   - {fileID: 369443508}
   - {fileID: 1632065048}
-  zombie: {fileID: 2694313112654321143, guid: 2158fe37566e901479ed5afe60ddc922, type: 3}
+  zombie: {fileID: 2694313112654321143, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
   zombieTypes:
   - type: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
     probability: 5

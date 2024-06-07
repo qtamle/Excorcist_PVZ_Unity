@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   damage: 2
-  sprite: {fileID: -714775004768492910, guid: 26f0c5c23fd206c42aaa9d67c44e8a27, type: 3}
+  sprite: {fileID: 6224631773077241828, guid: 8a2969dc4341bc64294d99e0d8908e7b, type: 3}
   deathSprite: {fileID: 0}
   range: 0.5
   eatCooldown: 1

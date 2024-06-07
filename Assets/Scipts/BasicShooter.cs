@@ -8,8 +8,8 @@ public class BasicShooter : MonoBehaviour
     public Transform shootOrigin;
     public float cooldown;
 
-    private bool canShoot;
-
+    private bool canShoot = true;
+    private bool isReady = false;
     public float range;
 
     public LayerMask shootMask;
@@ -17,9 +17,9 @@ public class BasicShooter : MonoBehaviour
     private GameObject target;
 
     private Animator animator;
+
     private void Start()
     {
-        Invoke("ResetCooldown", cooldown);
         animator = GetComponent<Animator>();
     }
 
@@ -29,16 +29,22 @@ public class BasicShooter : MonoBehaviour
         if (hit.collider)
         {
             target = hit.collider.gameObject;
-
+            if (!isReady)
+            {
+                ReadyShot(true);
+                isReady = true;
+            }
             SetShootAnimation(true);
             Shoot();
-            
         }
         else
         {
-            SetShootAnimation(false);
+            if (isReady)
+            {
+                Stop(true);
+                isReady = false;
+            }
         }
-
     }
 
     void ResetCooldown()
@@ -50,16 +56,51 @@ public class BasicShooter : MonoBehaviour
     {
         if (!canShoot)
             return;
+
         canShoot = false;
         Invoke("ResetCooldown", cooldown);
-        GameObject myBullet = Instantiate(bullet, shootOrigin.position, Quaternion.identity);
+        Instantiate(bullet, shootOrigin.position, Quaternion.identity);
     }
 
     void SetShootAnimation(bool isShooting)
     {
         if (animator != null)
         {
-            animator.SetBool("Shoot", isShooting);
+            animator.SetBool("fire", isShooting);
+        }
+    }
+
+    void ReadyShot(bool ready)
+    {
+        if (animator != null)
+        {
+            animator.SetBool("ready", ready);
+        }
+    }
+
+    void Stop(bool stop)
+    {
+        if (animator != null)
+        {
+            animator.SetBool("stop", stop);
+            if (stop)
+            {
+                Idle(true);
+                ReadyShot(false);
+                SetShootAnimation(false);
+            }
+            else
+            {
+                Idle(false);
+            }
+        }
+    }
+
+    void Idle(bool idle)
+    {
+        if (animator != null)
+        {
+            animator.SetBool("idle", idle);
         }
     }
 }

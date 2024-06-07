@@ -143,7 +143,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: FapSuBangIdle_Frame_1
     originalName: 
-    pivot: {x: 0.5457065, y: 0.29475802}
+    pivot: {x: 0.5457065, y: 0.34213254}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
