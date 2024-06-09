@@ -19,6 +19,12 @@ public class ZombieSpawner : MonoBehaviour
     public Slider progressBar;
 
     public float zombieDelay = 5;
+
+    public AudioClip zombieSpawnAudio;
+
+    private AudioSource audioSource;
+
+    private bool firstZombieSpawned = false;
     private void Start()
     {
         InvokeRepeating("SpawnZombie", 10, zombieDelay);
@@ -31,6 +37,8 @@ public class ZombieSpawner : MonoBehaviour
             }
         }
         progressBar.maxValue = zombieMax;
+
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void Update()
@@ -47,6 +55,12 @@ public class ZombieSpawner : MonoBehaviour
         int r = Random.Range(0, spawnpoints.Length);
         GameObject myZombie = Instantiate(zombie, spawnpoints[r].position, Quaternion.identity);
         myZombie.GetComponent<Zombie>().type = probList[Random.Range(0, probList.Count)];
+
+        if (!firstZombieSpawned && audioSource != null && zombieSpawnAudio != null)
+        {
+            audioSource.PlayOneShot(zombieSpawnAudio);
+            firstZombieSpawned = true;
+        }
     }
 
     [System.Serializable]

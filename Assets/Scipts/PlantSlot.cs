@@ -17,11 +17,15 @@ public class PlantSlot : MonoBehaviour
     private bool isCoolingDown = false;
     private Coroutine coroutine;
 
+    public AudioClip cooldownAudioClip;
+    public AudioClip buyCardPlantAudio;
+    private AudioSource audioSource; 
     private void Start()
     {
         gms = GameObject.Find("GameManager").GetComponent<Gamemanager>();
         GetComponent<Button>().onClick.AddListener(BuyPlant);
         OnValidate();
+        audioSource = GetComponent<AudioSource>();
     }
 
     private void BuyPlant()
@@ -29,6 +33,10 @@ public class PlantSlot : MonoBehaviour
         if (isCoolingDown)
         {
             Debug.Log("Đang cool down vui lòng chờ");
+            if (audioSource != null && cooldownAudioClip != null) 
+            {
+                audioSource.PlayOneShot(cooldownAudioClip);
+            }
             return;
         }
 
@@ -36,6 +44,12 @@ public class PlantSlot : MonoBehaviour
         {
             gms.suns -= price;
             gms.BuyPlant(plantObject, plantSprite);
+            
+            if (buyCardPlantAudio != null && audioSource != null)
+            {
+                audioSource.PlayOneShot(buyCardPlantAudio);
+            }
+
             if (coolDown > 0)
             {
                 isCoolingDown = true;
@@ -44,6 +58,10 @@ public class PlantSlot : MonoBehaviour
         }
         else
         {
+            if (audioSource != null && cooldownAudioClip != null)
+            {
+                audioSource.PlayOneShot(cooldownAudioClip);
+            }
             Debug.Log("Không đủ suns hoặc có plant đang được chọn");
         }
     }

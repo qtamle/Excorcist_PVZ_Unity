@@ -22,6 +22,11 @@ public class Zombie : MonoBehaviour
 
     public LayerMask plantMask;
 
+    public AudioClip snowAudio;
+
+    private AudioSource audioSource;
+
+    private bool isFrozen = false;
     private void Start()
     {
         health = type.health;
@@ -31,6 +36,7 @@ public class Zombie : MonoBehaviour
         eatCooldown = type.eatCooldown;
 
         GetComponent<SpriteRenderer>().sprite = type.sprite;
+        audioSource = GetComponent<AudioSource>();
 
     }
     private void Update()
@@ -67,8 +73,9 @@ public class Zombie : MonoBehaviour
     {
         health -= damage;
 
-        if (freeze)
+        if (freeze && !isFrozen && audioSource != null && snowAudio != null)
         {
+            audioSource.PlayOneShot(snowAudio);
             Freeze();
         }
         if (health <= 0)
@@ -85,16 +92,18 @@ public class Zombie : MonoBehaviour
 
         GetComponent<SpriteRenderer>().color = Color.blue;
 
+        isFrozen = true;
+
         speed = type.speed / 2;
         
         Invoke("UnFreeze", 5);
-    
+        
     }
 
     void UnFreeze()
     {
         GetComponent<SpriteRenderer>().color = Color.white;
         speed = type.speed;
-    
+        isFrozen = false;
     }
 }

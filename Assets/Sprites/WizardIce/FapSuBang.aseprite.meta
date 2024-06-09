@@ -1,0 +1,483 @@
+fileFormatVersion: 2
+guid: ca880a2dba516974592496cf92b8cdb8
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638529465608959558
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: FapSuBang_Frame_0
+    originalName: 
+    pivot: {x: 0.56985766, y: 0.45863578}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 51
+      y: 43
+      width: 22
+      height: 26
+    spriteID: 1f47191d0e82e014fadb6272ee531d5f
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 51, y: 43}
+  - name: FapSuBang_Frame_1
+    originalName: 
+    pivot: {x: 0.40087467, y: 0.32771972}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 209
+      width: 31
+      height: 25
+    spriteID: c51bcfe0fbe04fc4abe4c735f6e7cee2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 209}
+  - name: FapSuBang_Frame_2
+    originalName: 
+    pivot: {x: 0.41149607, y: 0.31015873}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 81
+      y: 4
+      width: 31
+      height: 25
+    spriteID: 914d5c13eaad52142a80ed1b43689e13
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 81, y: 4}
+  - name: FapSuBang_Frame_3
+    originalName: 
+    pivot: {x: 0.40725332, y: 0.29259828}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 143
+      width: 33
+      height: 25
+    spriteID: 1ab1d94ed62aaea45bd945ce8b739e68
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 143}
+  - name: FapSuBang_Frame_4
+    originalName: 
+    pivot: {x: 0.40732816, y: 0.32332885}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 43
+      y: 209
+      width: 30
+      height: 25
+    spriteID: e167ee8b04355da4ebd120273b8aaca4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 43, y: 209}
+  - name: FapSuBang_Frame_5
+    originalName: 
+    pivot: {x: 0.4385637, y: 0.32332915}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 47
+      y: 110
+      width: 26
+      height: 25
+    spriteID: aeca8b4125edc2c42bd5ef72a7578049
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 47, y: 110}
+  - name: FapSuBang_Frame_6
+    originalName: 
+    pivot: {x: 0.39558947, y: 0.30576906}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 176
+      width: 32
+      height: 25
+    spriteID: 32df34c89c1872147bb9cd9d6dddee47
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 176}
+  - name: FapSuBang_Frame_7
+    originalName: 
+    pivot: {x: 0.19654106, y: 0.2536688}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 69
+      height: 31
+    spriteID: eda50b4c57569d5418524d6d30d294b4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: FapSuBang_Frame_8
+    originalName: 
+    pivot: {x: 0.348789, y: 0.2794284}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 110
+      width: 35
+      height: 25
+    spriteID: c26ddde4147faa34b82176f152d0678a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 110}
+  - name: FapSuBang_Frame_9
+    originalName: 
+    pivot: {x: 0.3512954, y: 0.30576873}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 77
+      width: 36
+      height: 25
+    spriteID: b31b3a7a31670fc4bb62c2fd5a3121b6
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 77}
+  - name: FapSuBang_Frame_10
+    originalName: 
+    pivot: {x: 0.31301576, y: 0.3235563}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 43
+      width: 39
+      height: 26
+    spriteID: bbe9c687a3a14bb42a57ff04cad7eaf3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 43}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -1157425957
+    name: FapSuBang
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: FapSuBang_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 44
+        y: 48
+        width: 22
+        height: 26
+      spriteId: 1f47191d0e82e014fadb6272ee531d5f
+    - name: FapSuBang_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 44
+        y: 48
+        width: 31
+        height: 25
+      spriteId: c51bcfe0fbe04fc4abe4c735f6e7cee2
+    - name: FapSuBang_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 44
+        y: 48
+        width: 31
+        height: 25
+      spriteId: 914d5c13eaad52142a80ed1b43689e13
+    - name: FapSuBang_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 42
+        y: 48
+        width: 33
+        height: 25
+      spriteId: 1ab1d94ed62aaea45bd945ce8b739e68
+    - name: FapSuBang_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 43
+        y: 48
+        width: 30
+        height: 25
+      spriteId: e167ee8b04355da4ebd120273b8aaca4
+    - name: FapSuBang_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 47
+        y: 48
+        width: 26
+        height: 25
+      spriteId: aeca8b4125edc2c42bd5ef72a7578049
+    - name: FapSuBang_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 43
+        y: 48
+        width: 32
+        height: 25
+      spriteId: 32df34c89c1872147bb9cd9d6dddee47
+    - name: FapSuBang_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 41
+        y: 48
+        width: 69
+        height: 31
+      spriteId: eda50b4c57569d5418524d6d30d294b4
+    - name: FapSuBang_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 44
+        y: 48
+        width: 35
+        height: 25
+      spriteId: c26ddde4147faa34b82176f152d0678a
+    - name: FapSuBang_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 44
+        y: 48
+        width: 36
+        height: 25
+      spriteId: b31b3a7a31670fc4bb62c2fd5a3121b6
+    - name: FapSuBang_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 44
+        y: 48
+        width: 39
+        height: 26
+      spriteId: bbe9c687a3a14bb42a57ff04cad7eaf3
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 128, y: 128}

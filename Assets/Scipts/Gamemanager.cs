@@ -17,6 +17,18 @@ public class Gamemanager : MonoBehaviour
 
     public LayerMask sunMask;
 
+    public AudioClip plantPlacementAudioClip;
+
+    public AudioClip sunAudio;
+
+    private AudioSource audioSource;
+
+    public float sunMovementSpeed = 1f;
+    public float sunDisappearDelay = 1f;
+    private void Start()
+    {
+        audioSource = GetComponent<AudioSource>();
+    }
     public void BuyPlant(GameObject plant, Sprite sprite)
     {
         currentPlant = plant;
@@ -47,6 +59,11 @@ public class Gamemanager : MonoBehaviour
                     currentPlant = null;
                     currentPlantSprite = null;
 
+                    if (audioSource != null && plantPlacementAudioClip != null)
+                    {
+                        audioSource.PlayOneShot(plantPlacementAudioClip);
+                    }
+
                     if (plantedObject.GetComponent<Bomb>() != null)
                     {
                         plantedObject.GetComponent<Bomb>().StartExplosionCountdown();
@@ -60,10 +77,46 @@ public class Gamemanager : MonoBehaviour
         {
             if (Input.GetMouseButtonDown(0))
             {
-                suns += 25;
-                Destroy(sunHit.collider.gameObject);
+                if (Input.GetMouseButtonDown(0))
+                {
+                    if (audioSource != null && sunAudio != null) 
+                    {
+                        audioSource.PlayOneShot(sunAudio);
+                    }
+                    suns += 50;
+                    UpdateSunText();
+                    CollectSun(sunHit.collider.gameObject);
+                }
             }
         }
+    }
+    void CollectSun(GameObject sun)
+    {
+        StartCoroutine(MoveAndDisappearSun(sun));
+    }
+
+    IEnumerator MoveAndDisappearSun(GameObject sun)
+    {
+        Vector3 targetPosition = new Vector3(-10f, 10f, 0f); // Góc trái trên của màn hình
+        float startTime = Time.time;
+        Vector3 startPosition = sun.transform.position;
+
+        while (Time.time < startTime + sunMovementSpeed)
+        {
+            float t = (Time.time - startTime) / sunMovementSpeed;
+            sun.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
+            yield return null;
+        }
+
+        // Đợi một khoảng thời gian trước khi mặt trời biến mất
+        yield return new WaitForSeconds(sunDisappearDelay);
+
+        Destroy(sun);
+    }
+
+    void UpdateSunText()
+    {
+        sunText.text = suns.ToString();
     }
 
     // Thêm phương thức để cập nhật trạng thái hasPlant của ô

@@ -18,7 +18,13 @@ public class BasicShooter : MonoBehaviour
 
     private Animator animator;
 
-    private bool IsCoorect = true;
+    public AudioClip shootAudioClip;
+    private AudioSource audioSource;
+
+    private void Awake()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();
+    }
     private void Start()
     {
         Invoke("ResetCooldown", cooldown);
@@ -63,6 +69,12 @@ public class BasicShooter : MonoBehaviour
         canShoot = false;
         Invoke("ResetCooldown", cooldown);
         GameObject myBullet = Instantiate(bullet, shootOrigin.position, Quaternion.identity);
+
+        if (audioSource != null && shootAudioClip != null)
+        {
+            audioSource.PlayOneShot(shootAudioClip);
+        }
+
     }
 
     void SetShootAnimation(bool isShooting)

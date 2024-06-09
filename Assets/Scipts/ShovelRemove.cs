@@ -7,10 +7,14 @@ public class ShovelRemove : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     public LayerMask plantMask;
     private Gamemanager gameManager;
 
+    public AudioClip removePlantsound;
+    private AudioSource audioSource;
+
     void Start()
     {
         initialPosition = transform.position;
         gameManager = FindObjectOfType<Gamemanager>(); // Tìm đối tượng Gamemanager trong scene
+        audioSource = GetComponent<AudioSource>();
     }
 
     public void OnBeginDrag(PointerEventData eventData)
@@ -28,6 +32,10 @@ public class ShovelRemove : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
         RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero, Mathf.Infinity, plantMask);
         if (hit.collider)
         {
+            if (audioSource != null && removePlantsound != null) 
+            {
+                audioSource.PlayOneShot(removePlantsound);
+            }
             Destroy(hit.collider.gameObject);
             Debug.Log("Đã xóa đối tượng");
 
