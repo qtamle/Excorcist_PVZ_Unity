@@ -2812,7 +2812,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantSprite: {fileID: 21300000, guid: f3447d1f278c89343892df17c6b5c58c, type: 3}
-  plantObject: {fileID: 7458357986996761054, guid: 4bc18d5f1abc78544a3bf3e13bfb633c, type: 3}
+  plantObject: {fileID: 6408441885756010075, guid: b0ff258222b56c345aebb2761102e20e, type: 3}
   icon: {fileID: 1086595245}
   price: 250
   coolDown: 20
