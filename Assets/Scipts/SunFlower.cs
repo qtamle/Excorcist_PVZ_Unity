@@ -14,7 +14,7 @@ public class SunFlower : MonoBehaviour
     }
     void SpawnSun()
     {
-        GameObject mySun = Instantiate(sunObject, new Vector3 (transform.position.x + Random.Range(-.5f, .5f), transform.position.y + Random.Range(0f, 5f), 0), Quaternion.identity);
+        GameObject mySun = Instantiate(sunObject, new Vector3 (transform.position.x + Random.Range(-.5f, .5f), transform.position.y + Random.Range(5f, 10f), 0), Quaternion.identity);
         mySun.GetComponent<Sun>().dropToYpos = transform.position.y - 1;
     }
 
