@@ -1,0 +1,1143 @@
+fileFormatVersion: 2
+guid: 29f36c42a32c81b419172b58c1fbaa94
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+    swizzle: 50462976
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMipmapLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 16
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 638539061239554149
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: FapSuDien_Frame_0
+    originalName: 
+    pivot: {x: 0.6401134, y: 0.3445666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 174
+      y: 37
+      width: 19
+      height: 26
+    spriteID: bb0d3993a9b642a4fb42dbd73ff98b0b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 174, y: 37}
+  - name: FapSuDien_Frame_1
+    originalName: 
+    pivot: {x: 0.6401134, y: 0.3445666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 201
+      y: 37
+      width: 19
+      height: 26
+    spriteID: 481d82481c403814093b2b9fec98beac
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 201, y: 37}
+  - name: FapSuDien_Frame_2
+    originalName: 
+    pivot: {x: 0.4435996, y: 0.27573168}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 118
+      y: 4
+      width: 27
+      height: 25
+    spriteID: 0c06f4be4fc0b874a887e0de8e49c4d0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 118, y: 4}
+  - name: FapSuDien_Frame_3
+    originalName: 
+    pivot: {x: 0.6455034, y: 0.28311157}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 71
+      width: 19
+      height: 25
+    spriteID: a415724f2c486604f900a03ad94ffc6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 71}
+  - name: FapSuDien_Frame_4
+    originalName: 
+    pivot: {x: 0.40527013, y: 0.33703247}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 37
+      width: 30
+      height: 26
+    spriteID: 459fda1750faf3e4a91d4faf4da32dbd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 37}
+  - name: FapSuDien_Frame_5
+    originalName: 
+    pivot: {x: 0.6401134, y: 0.3445666}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 228
+      y: 37
+      width: 19
+      height: 26
+    spriteID: 53fe8a163dfad0448b6ef1f0bb6665ea
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 228, y: 37}
+  - name: FapSuDien_Frame_6
+    originalName: 
+    pivot: {x: 0.4435996, y: 0.2757317}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 153
+      y: 4
+      width: 27
+      height: 25
+    spriteID: c6607599ed31a2b449e31a7e6bfa44e2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 153, y: 4}
+  - name: FapSuDien_Frame_7
+    originalName: 
+    pivot: {x: 0.7315326, y: 0.2854944}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 77
+      y: 37
+      width: 25
+      height: 25
+    spriteID: 2bd0f160ca7467d41ba2a29fe4508fb5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 77, y: 37}
+  - name: FapSuDien_Frame_8
+    originalName: 
+    pivot: {x: 0.7315326, y: 0.2659694}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 110
+      y: 37
+      width: 25
+      height: 25
+    spriteID: 3dda53ec663d97144b0751f0ab9da78d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 110, y: 37}
+  - name: FapSuDien_Frame_9
+    originalName: 
+    pivot: {x: 0.75141877, y: 0.2706472}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 42
+      y: 37
+      width: 27
+      height: 24
+    spriteID: 00dbf0fe3237abf47914116cb3fd3ae2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 42, y: 37}
+  - name: FapSuDien_Frame_10
+    originalName: 
+    pivot: {x: 0.7540635, y: 0.29840252}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 82
+      y: 4
+      width: 28
+      height: 25
+    spriteID: 363d49cb17644af49a7e1a24df21fca2
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 82, y: 4}
+  - name: FapSuDien_Frame_11
+    originalName: 
+    pivot: {x: 0.6326579, y: 0.2757317}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 71
+      width: 19
+      height: 25
+    spriteID: 76ea2c28de877fc40be21b6975aab428
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 71}
+  - name: FapSuDien_Frame_12
+    originalName: 
+    pivot: {x: 0.6234383, y: 0.31239867}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 143
+      y: 37
+      width: 23
+      height: 25
+    spriteID: 81f8ab1dd1cb6ef4ca5263002c5e1089
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 143, y: 37}
+  - name: FapSuDien_Frame_13
+    originalName: 
+    pivot: {x: 0.5622615, y: 0.26139098}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 188
+      y: 4
+      width: 27
+      height: 25
+    spriteID: ef3c31516f9ff9c4cb3179ce142ff435
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 188, y: 4}
+  - name: FapSuDien_Frame_14
+    originalName: 
+    pivot: {x: 0.50879246, y: 0.28620255}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 223
+      y: 4
+      width: 27
+      height: 25
+    spriteID: af4ff1c2d0b1a5d48b9ae0b29d754169
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 223, y: 4}
+  - name: FapSuDien_Frame_15
+    originalName: 
+    pivot: {x: 0.4645898, y: 0.3149923}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 44
+      y: 4
+      width: 30
+      height: 25
+    spriteID: 34772e30b3856384ebc2a2f871afe9c0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 44, y: 4}
+  - name: FapSuDien_Frame_16
+    originalName: 
+    pivot: {x: 0.44723088, y: 0.29028103}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 32
+      height: 25
+    spriteID: fd710ba342842304191588c8688d13da
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: FapSuDien_Frame_17
+    originalName: 
+    pivot: {x: 0.5414894, y: 0.2806134}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 71
+      width: 19
+      height: 25
+    spriteID: d9055d787383be74bb02af6ff615d234
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 71}
+  - name: FapSuDien_Frame_18
+    originalName: 
+    pivot: {x: 0.72257435, y: 0.28799316}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 71
+      width: 19
+      height: 25
+    spriteID: 2b2f9bde901538048bc2158ad81dd74c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 166, y: 71}
+  - name: FapSuDien_Frame_19
+    originalName: 
+    pivot: {x: 0.63907987, y: 0.28311127}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 193
+      y: 71
+      width: 19
+      height: 25
+    spriteID: 93305f2c707c53c448e80a8612a72387
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 193, y: 71}
+  - name: FapSuDien_Frame_20
+    originalName: 
+    pivot: {x: 0.76753235, y: 0.29287383}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 220
+      y: 71
+      width: 19
+      height: 25
+    spriteID: 0611484cb34bccf438f607506e83e5bb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 220, y: 71}
+  - name: FapSuDien_Frame_21
+    originalName: 
+    pivot: {x: 0.6326576, y: 0.2708517}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 105
+      width: 19
+      height: 25
+    spriteID: ffda3532da25288488eaed49d052816a
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 105}
+  - name: FapSuDien_Frame_22
+    originalName: 
+    pivot: {x: 0.6326576, y: 0.2708517}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 31
+      y: 105
+      width: 19
+      height: 25
+    spriteID: 89d0f3bffa7be4c42a18ba4ab616c9b3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 31, y: 105}
+  - name: FapSuDien_Frame_23
+    originalName: 
+    pivot: {x: 0.6326576, y: 0.2708517}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 58
+      y: 105
+      width: 19
+      height: 25
+    spriteID: 861723be73cd692498573b2296c74537
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 58, y: 105}
+  - name: FapSuDien_Frame_24
+    originalName: 
+    pivot: {x: 0.7084791, y: 0.32854402}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 71
+      width: 19
+      height: 26
+    spriteID: 37077ef3d715bc4419049ca50c25122d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 71}
+  - name: FapSuDien_Frame_25
+    originalName: 
+    pivot: {x: 0.6314071, y: 0.3144637}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 31
+      y: 71
+      width: 19
+      height: 26
+    spriteID: 3256cd392784b9c499a539f44e273e6c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 31, y: 71}
+  - name: FapSuDien_Frame_26
+    originalName: 
+    pivot: {x: 0.46645, y: 0.32541546}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 189
+      y: 105
+      width: 15
+      height: 21
+    spriteID: 93bd94627302d5c40913439fd426d5ba
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 189, y: 105}
+  - name: FapSuDien_Frame_27
+    originalName: 
+    pivot: {x: 0.38034362, y: 0.12203121}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 166
+      y: 105
+      width: 15
+      height: 24
+    spriteID: 8bb5e6c73040ab34b9e14acdd2df369b
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 166, y: 105}
+  - name: FapSuDien_Frame_28
+    originalName: 
+    pivot: {x: 0.4432714, y: 0.36609346}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 212
+      y: 105
+      width: 17
+      height: 10
+    spriteID: 943d61e272f580748a82a7f38a78907d
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 212, y: 105}
+  - name: FapSuDien_Frame_29
+    originalName: 
+    pivot: {x: 0.4432714, y: 0.3660935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 138
+      width: 17
+      height: 10
+    spriteID: 3a8cf8a4b91d4604c9be939dc59827d4
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 138}
+  - name: FapSuDien_Frame_30
+    originalName: 
+    pivot: {x: 0.4432714, y: 0.3660935}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 29
+      y: 138
+      width: 17
+      height: 10
+    spriteID: 4b27e7e30115bd446b08b43ea53340f7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 29, y: 138}
+  - name: FapSuDien_Frame_31
+    originalName: 
+    pivot: {x: 0.5748536, y: 0.1273366}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 112
+      y: 105
+      width: 19
+      height: 23
+    spriteID: fd8a70ae9794f314daebaef1fde17dee
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 112, y: 105}
+  - name: FapSuDien_Frame_32
+    originalName: 
+    pivot: {x: 0.5748536, y: 0.1273366}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 139
+      y: 105
+      width: 19
+      height: 23
+    spriteID: f62901259d1ecc84b86bdfac141187d3
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 139, y: 105}
+  - name: FapSuDien_Frame_33
+    originalName: 
+    pivot: {x: 0.64550257, y: 0.20983665}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 85
+      y: 105
+      width: 19
+      height: 24
+    spriteID: 028ee364311e01847948dc815e9c8400
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 85, y: 105}
+  - name: FapSuDien_Frame_34
+    originalName: 
+    pivot: {x: 0.6314071, y: 0.31446368}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 58
+      y: 71
+      width: 19
+      height: 26
+    spriteID: 6d434f51bc6be1b419c3c0430d29a021
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 58, y: 71}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: -2088849021
+    name: FapSuDien
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: FapSuDien_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 26
+      spriteId: bb0d3993a9b642a4fb42dbd73ff98b0b
+    - name: FapSuDien_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 26
+      spriteId: 481d82481c403814093b2b9fec98beac
+    - name: FapSuDien_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 14
+        y: 0
+        width: 27
+        height: 25
+      spriteId: 0c06f4be4fc0b874a887e0de8e49c4d0
+    - name: FapSuDien_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 25
+      spriteId: a415724f2c486604f900a03ad94ffc6c
+    - name: FapSuDien_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 14
+        y: 0
+        width: 30
+        height: 26
+      spriteId: 459fda1750faf3e4a91d4faf4da32dbd
+    - name: FapSuDien_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 26
+      spriteId: 53fe8a163dfad0448b6ef1f0bb6665ea
+    - name: FapSuDien_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 14
+        y: 0
+        width: 27
+        height: 25
+      spriteId: c6607599ed31a2b449e31a7e6bfa44e2
+    - name: FapSuDien_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 7
+        y: 0
+        width: 25
+        height: 25
+      spriteId: 2bd0f160ca7467d41ba2a29fe4508fb5
+    - name: FapSuDien_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 7
+        y: 0
+        width: 25
+        height: 25
+      spriteId: 3dda53ec663d97144b0751f0ab9da78d
+    - name: FapSuDien_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 5
+        y: 0
+        width: 27
+        height: 24
+      spriteId: 00dbf0fe3237abf47914116cb3fd3ae2
+    - name: FapSuDien_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 4
+        y: 0
+        width: 28
+        height: 25
+      spriteId: 363d49cb17644af49a7e1a24df21fca2
+    - name: FapSuDien_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 25
+      spriteId: 76ea2c28de877fc40be21b6975aab428
+    - name: FapSuDien_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 14
+        y: 0
+        width: 23
+        height: 25
+      spriteId: 81f8ab1dd1cb6ef4ca5263002c5e1089
+    - name: FapSuDien_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 14
+        y: 0
+        width: 27
+        height: 25
+      spriteId: ef3c31516f9ff9c4cb3179ce142ff435
+    - name: FapSuDien_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 14
+        y: 0
+        width: 27
+        height: 25
+      spriteId: af4ff1c2d0b1a5d48b9ae0b29d754169
+    - name: FapSuDien_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 15
+        y: 0
+        width: 30
+        height: 25
+      spriteId: 34772e30b3856384ebc2a2f871afe9c0
+    - name: FapSuDien_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 15
+        y: 0
+        width: 32
+        height: 25
+      spriteId: fd710ba342842304191588c8688d13da
+    - name: FapSuDien_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 15
+        y: 0
+        width: 19
+        height: 25
+      spriteId: d9055d787383be74bb02af6ff615d234
+    - name: FapSuDien_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 25
+      spriteId: 2b2f9bde901538048bc2158ad81dd74c
+    - name: FapSuDien_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 25
+      spriteId: 93305f2c707c53c448e80a8612a72387
+    - name: FapSuDien_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 25
+      spriteId: 0611484cb34bccf438f607506e83e5bb
+    - name: FapSuDien_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 25
+      spriteId: ffda3532da25288488eaed49d052816a
+    - name: FapSuDien_Frame_22
+      frameIndex: 22
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 25
+      spriteId: 89d0f3bffa7be4c42a18ba4ab616c9b3
+    - name: FapSuDien_Frame_23
+      frameIndex: 23
+      cellRect:
+        x: 15
+        y: 0
+        width: 19
+        height: 25
+      spriteId: 861723be73cd692498573b2296c74537
+    - name: FapSuDien_Frame_24
+      frameIndex: 24
+      cellRect:
+        x: 14
+        y: 0
+        width: 19
+        height: 26
+      spriteId: 37077ef3d715bc4419049ca50c25122d
+    - name: FapSuDien_Frame_25
+      frameIndex: 25
+      cellRect:
+        x: 15
+        y: 0
+        width: 19
+        height: 26
+      spriteId: 3256cd392784b9c499a539f44e273e6c
+    - name: FapSuDien_Frame_26
+      frameIndex: 26
+      cellRect:
+        x: 20
+        y: 0
+        width: 15
+        height: 21
+      spriteId: 93bd94627302d5c40913439fd426d5ba
+    - name: FapSuDien_Frame_27
+      frameIndex: 27
+      cellRect:
+        x: 23
+        y: 0
+        width: 15
+        height: 24
+      spriteId: 8bb5e6c73040ab34b9e14acdd2df369b
+    - name: FapSuDien_Frame_28
+      frameIndex: 28
+      cellRect:
+        x: 23
+        y: 0
+        width: 17
+        height: 10
+      spriteId: 943d61e272f580748a82a7f38a78907d
+    - name: FapSuDien_Frame_29
+      frameIndex: 29
+      cellRect:
+        x: 23
+        y: 0
+        width: 17
+        height: 10
+      spriteId: 3a8cf8a4b91d4604c9be939dc59827d4
+    - name: FapSuDien_Frame_30
+      frameIndex: 30
+      cellRect:
+        x: 23
+        y: 0
+        width: 17
+        height: 10
+      spriteId: 4b27e7e30115bd446b08b43ea53340f7
+    - name: FapSuDien_Frame_31
+      frameIndex: 31
+      cellRect:
+        x: 17
+        y: 0
+        width: 19
+        height: 23
+      spriteId: fd8a70ae9794f314daebaef1fde17dee
+    - name: FapSuDien_Frame_32
+      frameIndex: 32
+      cellRect:
+        x: 17
+        y: 0
+        width: 19
+        height: 23
+      spriteId: f62901259d1ecc84b86bdfac141187d3
+    - name: FapSuDien_Frame_33
+      frameIndex: 33
+      cellRect:
+        x: 15
+        y: 0
+        width: 19
+        height: 24
+      spriteId: 028ee364311e01847948dc815e9c8400
+    - name: FapSuDien_Frame_34
+      frameIndex: 34
+      cellRect:
+        x: 15
+        y: 0
+        width: 19
+        height: 26
+      spriteId: 6d434f51bc6be1b419c3c0430d29a021
+    linkedCells: []
+    parentIndex: -1
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 64, y: 32}
