@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
 using UnityEngine;
 
 public class SunFlower : MonoBehaviour
@@ -7,15 +6,34 @@ public class SunFlower : MonoBehaviour
     public GameObject sunObject;
     public float cooldown;
 
+    private Animator animator;
+
     private void Start()
     {
-        InvokeRepeating("SpawnSun", cooldown, cooldown);
-
+        animator = GetComponent<Animator>();
+        InvokeRepeating("SpawnSpirit", cooldown, cooldown);
     }
-    void SpawnSun()
+
+    void SpawnSpirit()
     {
-        GameObject mySun = Instantiate(sunObject, new Vector3 (transform.position.x + Random.Range(-.5f, .5f), transform.position.y + Random.Range(0f, 5f), 0), Quaternion.identity);
-        mySun.GetComponent<Sun>().dropToYpos = transform.position.y - 1;
+        animator.SetBool("spawn", true);
+
+        StartCoroutine(SpawnSunCoroutine());
     }
 
+    IEnumerator SpawnSunCoroutine()
+    {
+        yield return new WaitForSeconds(1f);
+
+        Vector3 spawnPosition = new Vector3(
+            transform.position.x + Random.Range(-0.5f, 0.5f),
+            transform.position.y + Random.Range(0f, 5f),
+            0
+        );
+        GameObject mySun = Instantiate(sunObject, spawnPosition, Quaternion.identity);
+        mySun.GetComponent<Sun>().dropToYpos = transform.position.y - 1;
+
+        animator.SetBool("idle", true);
+        animator.SetBool("spawn", false);
+    }
 }

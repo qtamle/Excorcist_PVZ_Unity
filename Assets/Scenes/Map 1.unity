@@ -766,7 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e3e7018ba546e48aa1399a55b7e836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantSprite: {fileID: 21300000, guid: 932b89bb7f4b7ff4b9940505098d1ac4, type: 3}
+  plantSprite: {fileID: -6715595053930913549, guid: 65991d25932f6154f8f6fed6224431e6, type: 3}
   plantObject: {fileID: 6585671390701343541, guid: 40b54dcb4de13684ba3818bd786f277c, type: 3}
   icon: {fileID: 1491527494}
   price: 50
@@ -3935,8 +3935,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -23.55, y: 7.6608}
-  m_SizeDelta: {x: 29.2758, y: 25.565}
+  m_AnchoredPosition: {x: -21.159, y: 7.4}
+  m_SizeDelta: {x: 24.493, y: 19.879}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &805630874
 MonoBehaviour:
@@ -3958,7 +3958,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -6715595053930913549, guid: 65991d25932f6154f8f6fed6224431e6, type: 3}
+  m_Sprite: {fileID: -5919429710448270168, guid: 4af90ea935f02a7449f6d14bebaf2685, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -8949,7 +8949,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 932b89bb7f4b7ff4b9940505098d1ac4, type: 3}
+  m_Sprite: {fileID: -6715595053930913549, guid: 65991d25932f6154f8f6fed6224431e6, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -9418,7 +9418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e3e7018ba546e48aa1399a55b7e836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantSprite: {fileID: -6715595053930913549, guid: 65991d25932f6154f8f6fed6224431e6, type: 3}
+  plantSprite: {fileID: -5919429710448270168, guid: 4af90ea935f02a7449f6d14bebaf2685, type: 3}
   plantObject: {fileID: 7886265825666194120, guid: 7ae6b68c3521ef0409dd61a627165132, type: 3}
   icon: {fileID: 805630874}
   price: 200
