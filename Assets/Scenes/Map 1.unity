@@ -1708,7 +1708,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6a14ee37594718e4db178b59387f4086, type: 3}
+  m_Sprite: {fileID: -446056669470388430, guid: 021956d2e44f09f41a77ee7b82e19270, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1827,7 +1827,7 @@ Transform:
   m_GameObject: {fileID: 277293762}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.71, y: 5.66, z: 0}
+  m_LocalPosition: {x: 1.71, y: 5.51, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2258,7 +2258,7 @@ Transform:
   m_GameObject: {fileID: 476431754}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.24, y: 3.98, z: 0}
+  m_LocalPosition: {x: 1.28, y: 3.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2465,7 +2465,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 175
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a43900b51c9a04c48b5839ec2fc5294d, type: 2}
   m_sharedMaterial: {fileID: 5585347743652989898, guid: a43900b51c9a04c48b5839ec2fc5294d, type: 2}
@@ -2814,7 +2814,7 @@ MonoBehaviour:
   plantSprite: {fileID: 21300000, guid: f3447d1f278c89343892df17c6b5c58c, type: 3}
   plantObject: {fileID: 6408441885756010075, guid: b0ff258222b56c345aebb2761102e20e, type: 3}
   icon: {fileID: 1086595245}
-  price: 250
+  price: 350
   coolDown: 20
   priceText: {fileID: 1468366862}
   cooldownOverlay: {fileID: 976794334}
@@ -7458,7 +7458,7 @@ Transform:
   m_GameObject: {fileID: 1261121835}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.15, y: 7.32, z: 0}
+  m_LocalPosition: {x: 1.15, y: 7.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7596,7 +7596,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 125
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a43900b51c9a04c48b5839ec2fc5294d, type: 2}
   m_sharedMaterial: {fileID: 5585347743652989898, guid: a43900b51c9a04c48b5839ec2fc5294d, type: 2}
@@ -8134,7 +8134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9e3e7018ba546e48aa1399a55b7e836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  plantSprite: {fileID: 21300000, guid: 6a14ee37594718e4db178b59387f4086, type: 3}
+  plantSprite: {fileID: -446056669470388430, guid: 021956d2e44f09f41a77ee7b82e19270, type: 3}
   plantObject: {fileID: 6585671390701343541, guid: 8d8cc163ca8b8a04d95b0eaf6777646d, type: 3}
   icon: {fileID: 259187584}
   price: 50
@@ -8568,7 +8568,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 250
+  m_text: 350
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a43900b51c9a04c48b5839ec2fc5294d, type: 2}
   m_sharedMaterial: {fileID: 5585347743652989898, guid: a43900b51c9a04c48b5839ec2fc5294d, type: 2}
@@ -9421,7 +9421,7 @@ MonoBehaviour:
   plantSprite: {fileID: -6715595053930913549, guid: 65991d25932f6154f8f6fed6224431e6, type: 3}
   plantObject: {fileID: 7886265825666194120, guid: 7ae6b68c3521ef0409dd61a627165132, type: 3}
   icon: {fileID: 805630874}
-  price: 150
+  price: 200
   coolDown: 15
   priceText: {fileID: 2117716597}
   cooldownOverlay: {fileID: 821935562}
@@ -10365,7 +10365,7 @@ MonoBehaviour:
   plantSprite: {fileID: 21300000, guid: 96cb3f377ad19824791bb5078696d681, type: 3}
   plantObject: {fileID: 6585671390701343541, guid: d42b9b798e263b44a82f738f95d80f51, type: 3}
   icon: {fileID: 1124321839}
-  price: 100
+  price: 125
   coolDown: 3
   priceText: {fileID: 1415040808}
   cooldownOverlay: {fileID: 1524606162}
@@ -11320,7 +11320,7 @@ MonoBehaviour:
   plantSprite: {fileID: 4774042707619300143, guid: ca880a2dba516974592496cf92b8cdb8, type: 3}
   plantObject: {fileID: 6585671390701343541, guid: 83c82704d302994438dde8f18c090c86, type: 3}
   icon: {fileID: 1433612966}
-  price: 175
+  price: 200
   coolDown: 3
   priceText: {fileID: 485272941}
   cooldownOverlay: {fileID: 143032417}
@@ -13758,7 +13758,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 150
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a43900b51c9a04c48b5839ec2fc5294d, type: 2}
   m_sharedMaterial: {fileID: 5585347743652989898, guid: a43900b51c9a04c48b5839ec2fc5294d, type: 2}

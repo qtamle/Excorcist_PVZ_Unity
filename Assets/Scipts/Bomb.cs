@@ -9,7 +9,7 @@ public class Bomb : MonoBehaviour
     public float coolDown = 1.0f;
     public LayerMask targetMask;
 
-    public GameObject sunPrefab; // Thêm tham chiếu tới prefab của Sun
+    public GameObject sunPrefab;
 
     private Gamemanager gameManager;
 
