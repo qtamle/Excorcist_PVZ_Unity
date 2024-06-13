@@ -9,7 +9,7 @@ public class Bomb : MonoBehaviour
     public float coolDown = 1.0f;
     public LayerMask targetMask;
 
-    public GameObject sunPrefab;
+    public GameObject sunPrefab; 
 
     private Gamemanager gameManager;
 
@@ -54,7 +54,7 @@ public class Bomb : MonoBehaviour
 
     void HandleZombieKilled(bool killedByBomb, Vector3 position)
     {
-        if (killedByBomb && Random.value <= 0.3f)
+        if (killedByBomb && Random.value <= 1f)
         {
             SpawnSun(position);
         }

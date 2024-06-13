@@ -83,7 +83,7 @@ public class Zombie : MonoBehaviour
             {
                 OnZombieKilled.Invoke(fromBomb, transform.position);
             }
-            Destroy(gameObject, 0);
+            Destroy(gameObject, 0.5f);
         }
     }
 

@@ -8,7 +8,7 @@ public class SunSpawn : MonoBehaviour
 
     private void Start()
     {
-        Invoke("SpawnSun", Random.Range(6, 12));
+        SpawnSun();
     }
 
     void SpawnSun()
