@@ -15,6 +15,6 @@ public class SunSpawn : MonoBehaviour
     {
         GameObject mySun =  Instantiate(sunObject, new Vector3(Random.Range(-5.19f, 5.19f), 7, 0), Quaternion.identity);
         mySun.GetComponent<Sun>().dropToYpos = Random.Range(2f, -3f);
-        Invoke("SpawnSun", Random.Range(6, 10));
+        Invoke("SpawnSun", Random.Range(9, 15));
     }
 }

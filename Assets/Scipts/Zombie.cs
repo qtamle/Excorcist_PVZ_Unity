@@ -1,32 +1,29 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Zombie : MonoBehaviour
 {
     public ZombieTypes type;
-
     public float speed;
-
     public float health;
-
     public float range;
-
     public float damage;
-
-    public float eatCooldown;   
+    public float eatCooldown;
 
     private bool canEat = true;
-
     public Plant targetPlant;
-
     public LayerMask plantMask;
-
     public AudioClip snowAudio;
 
     private AudioSource audioSource;
-
     private bool isFrozen = false;
+
+    public delegate void ZombieKilledHandler(bool killedByBomb, Vector3 position);
+    public event ZombieKilledHandler OnZombieKilled;
+
+    public GameObject sunPrefab; // Thêm tham chiếu tới prefab của Sun
+
     private void Start()
     {
         health = type.health;
@@ -37,8 +34,8 @@ public class Zombie : MonoBehaviour
 
         GetComponent<SpriteRenderer>().sprite = type.sprite;
         audioSource = GetComponent<AudioSource>();
-
     }
+
     private void Update()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, range, plantMask);
@@ -47,7 +44,7 @@ public class Zombie : MonoBehaviour
         {
             targetPlant = hit.collider.GetComponent<Plant>();
             Eat();
-         }
+        }
     }
 
     void Eat()
@@ -63,13 +60,14 @@ public class Zombie : MonoBehaviour
     {
         canEat = true;
     }
+
     private void FixedUpdate()
     {
         if (!targetPlant)
-            transform.position -= new Vector3 (speed, 0,0);
+            transform.position -= new Vector3(speed, 0, 0);
     }
 
-    public void Hit(float damage, bool freeze)
+    public void Hit(float damage, bool freeze, bool fromBomb = false)
     {
         health -= damage;
 
@@ -81,8 +79,11 @@ public class Zombie : MonoBehaviour
         if (health <= 0)
         {
             GetComponent<SpriteRenderer>().sprite = type.deathSprite;
+            if (OnZombieKilled != null)
+            {
+                OnZombieKilled.Invoke(fromBomb, transform.position);
+            }
             Destroy(gameObject, 1);
-
         }
     }
 
@@ -91,13 +92,10 @@ public class Zombie : MonoBehaviour
         CancelInvoke("UnFreeze");
 
         GetComponent<SpriteRenderer>().color = Color.blue;
-
         isFrozen = true;
-
         speed = type.speed / 2;
-        
+
         Invoke("UnFreeze", 5);
-        
     }
 
     void UnFreeze()

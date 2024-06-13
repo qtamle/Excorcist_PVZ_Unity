@@ -4984,7 +4984,7 @@ MonoBehaviour:
   tileMask:
     serializedVersion: 2
     m_Bits: 64
-  suns: 999
+  suns: 100
   sunText: {fileID: 1528265484}
   sunMask:
     serializedVersion: 2
@@ -13150,7 +13150,7 @@ MonoBehaviour:
   zombieMax: 20
   zombiesSpawned: 0
   progressBar: {fileID: 235240680}
-  zombieDelay: 5
+  zombieDelay: 8
   zombieSpawnAudio: {fileID: 8300000, guid: 6568204d668746840ba8735e5fcc786e, type: 3}
 --- !u!4 &2005398057
 Transform:

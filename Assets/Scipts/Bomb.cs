@@ -9,6 +9,8 @@ public class Bomb : MonoBehaviour
     public float coolDown = 1.0f;
     public LayerMask targetMask;
 
+    public GameObject sunPrefab; // Thêm tham chiếu tới prefab của Sun
+
     private Gamemanager gameManager;
 
     private void Start()
@@ -37,7 +39,8 @@ public class Bomb : MonoBehaviour
             Zombie targetZombie = collider.GetComponent<Zombie>();
             if (targetZombie != null)
             {
-                targetZombie.Hit(damage, false);
+                targetZombie.Hit(damage, false, true); // true vì bị giết bởi bomb
+                targetZombie.OnZombieKilled += HandleZombieKilled;
             }
         }
 
@@ -49,4 +52,17 @@ public class Bomb : MonoBehaviour
         Destroy(gameObject);
     }
 
+    void HandleZombieKilled(bool killedByBomb, Vector3 position)
+    {
+        if (killedByBomb && Random.value <= 0.3f)
+        {
+            SpawnSun(position);
+        }
+    }
+
+    void SpawnSun(Vector3 position)
+    {
+        GameObject mySun = Instantiate(sunPrefab, position, Quaternion.identity);
+        mySun.GetComponent<Sun>().dropToYpos = position.y - 1;
+    }
 }
