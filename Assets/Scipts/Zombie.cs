@@ -95,7 +95,7 @@ public class Zombie : MonoBehaviour
         isFrozen = true;
         speed = type.speed / 2;
 
-        Invoke("UnFreeze", 5);
+        Invoke("UnFreeze", 8);
     }
 
     void UnFreeze()

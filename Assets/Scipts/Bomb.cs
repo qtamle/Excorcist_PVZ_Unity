@@ -54,7 +54,7 @@ public class Bomb : MonoBehaviour
 
     void HandleZombieKilled(bool killedByBomb, Vector3 position)
     {
-        if (killedByBomb && Random.value <= 1f)
+        if (killedByBomb && Random.value <= 0.3f)
         {
             SpawnSun(position);
         }
