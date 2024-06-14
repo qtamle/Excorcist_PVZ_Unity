@@ -41,10 +41,12 @@ GameObject:
   m_Component:
   - component: {fileID: 873910774981556510}
   - component: {fileID: 2214537061004784195}
-  - component: {fileID: 6913940633519407925}
   - component: {fileID: 8641796209497451442}
+  - component: {fileID: 1173037502680236327}
+  - component: {fileID: 1062552546948402325}
+  - component: {fileID: 2182804615510030003}
   m_Layer: 0
-  m_Name: coconut
+  m_Name: fapsudien
   m_TagString: Coconut
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,8 +61,8 @@ Transform:
   m_GameObject: {fileID: 6408441885756010075}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.7, y: -2, z: 0}
-  m_LocalScale: {x: 1.9623, y: 1.9623, z: 1.9623}
+  m_LocalPosition: {x: -3.371, y: -2.4943, z: 0}
+  m_LocalScale: {x: 1.0795767, y: 1.0795767, z: 1.0795767}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4179091495644339327}
@@ -107,7 +109,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f3447d1f278c89343892df17c6b5c58c, type: 3}
+  m_Sprite: {fileID: -7725866345295559466, guid: 29f36c42a32c81b419172b58c1fbaa94, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -118,8 +120,61 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &6913940633519407925
-BoxCollider2D:
+--- !u!114 &8641796209497451442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408441885756010075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424afbce8e7269748b9b3633507b7411, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bulletPrefab: {fileID: 38298770887038846, guid: 5dcfa2830fc2654458a13c7253b61a4d, type: 3}
+  bulletSpawnPoint: {fileID: 4179091495644339327}
+  cooldownTime: 10
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  animator: {fileID: 1173037502680236327}
+--- !u!95 &1173037502680236327
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408441885756010075}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3cf8af1747dcdad4ca2b46e9e29576ba, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1062552546948402325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6408441885756010075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 592cc33df47ad344ead1265a7deda2c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 15
+--- !u!60 &2182804615510030003
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -150,34 +205,22 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.12189281, y: 0.008593589}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.50201106, y: 0.39048955}
-    oldSize: {x: 1.15, y: 1}
+    pivot: {x: 0.6401134, y: 0.3445666}
+    oldSize: {x: 1.1875, y: 1.625}
     newSize: {x: 1.15, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.7507684, y: 0.6650887}
-  m_EdgeRadius: 0
---- !u!114 &8641796209497451442
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6408441885756010075}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 424afbce8e7269748b9b3633507b7411, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 38298770887038846, guid: 5dcfa2830fc2654458a13c7253b61a4d, type: 3}
-  bulletSpawnPoint: {fileID: 4179091495644339327}
-  cooldownTime: 10
-  targetLayer:
-    serializedVersion: 2
-    m_Bits: 128
+  m_Points:
+    m_Paths:
+    - - {x: 0.3648653, y: 1.0650792}
+      - {x: -0.7601347, y: 1.0650792}
+      - {x: -0.7601347, y: -0.5599208}
+      - {x: 0.3023653, y: -0.5599208}
+      - {x: 0.4273653, y: -0.4974208}
+      - {x: 0.4273653, y: 1.0025792}
+  m_UseDelaunayMesh: 0

@@ -27,7 +27,7 @@ public class SunFlower : MonoBehaviour
 
         Vector3 spawnPosition = new Vector3(
             transform.position.x + Random.Range(-0.5f, 0.5f),
-            transform.position.y + Random.Range(0f, 5f),
+            transform.position.y + Random.Range(0f, 0f),
             0
         );
         GameObject mySun = Instantiate(sunObject, spawnPosition, Quaternion.identity);

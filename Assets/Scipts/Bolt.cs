@@ -8,6 +8,14 @@ public class Bolt : MonoBehaviour
     public float explosionRadius = 2f; // Bán kính của vụ nổ
     public float speed = 0.8f;
     public bool freeze;
+    public GameObject explosionPrefab;
+
+    private Animator animator;
+
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     private void Update()
     {
@@ -25,6 +33,12 @@ public class Bolt : MonoBehaviour
 
     void Explode(Zombie target)
     {
+        if (explosionPrefab != null)
+        {
+            GameObject explosion = Instantiate(explosionPrefab, target.transform.position, Quaternion.identity);
+            Destroy(explosion, 0.5f); // Phá hủy vụ nổ sau 1 giây
+        }
+
         // Tìm tất cả các zombie trong bán kính nổ
         Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, explosionRadius);
 
@@ -37,4 +51,5 @@ public class Bolt : MonoBehaviour
             }
         }
     }
+
 }

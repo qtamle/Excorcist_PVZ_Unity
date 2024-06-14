@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5658347952336227897}
   - component: {fileID: 4413975407884138789}
   - component: {fileID: 5998967922285342817}
+  - component: {fileID: -73067758222002719}
   m_Layer: 0
   m_Name: bolt
   m_TagString: Untagged
@@ -29,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 38298770887038846}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.91, y: -1.99, z: 0}
-  m_LocalScale: {x: 0.6299, y: 0.6299, z: 0.6299}
+  m_LocalPosition: {x: -0.6771, y: -1.7571, z: 0}
+  m_LocalScale: {x: 1.2509507, y: 1.2509507, z: 1.2509507}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7feac61d9ba29fd4cba5ed13f35a3b12, type: 3}
+  m_Sprite: {fileID: -8173669602454081285, guid: 027c2028686db33488351c1764295551, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,18 +120,18 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.0035195053, y: -0.012537777}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.46, y: 1.43}
+    oldSize: {x: 0.75, y: 0.75}
     newSize: {x: 1.46, y: 1.43}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.46, y: 1.43}
+  m_Size: {x: 0.98156947, y: 0.9135419}
   m_EdgeRadius: 0
 --- !u!50 &4413975407884138789
 Rigidbody2D:
@@ -140,7 +141,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 38298770887038846}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -156,8 +157,8 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_SleepingMode: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
 --- !u!114 &5998967922285342817
 MonoBehaviour:
@@ -173,5 +174,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 15
   explosionRadius: 2
-  speed: 0.05
+  speed: 0.003
   freeze: 0
+  explosionPrefab: {fileID: 2180151383138835104, guid: 625fdbd865875474f9f7752329df364b, type: 3}
+--- !u!95 &-73067758222002719
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38298770887038846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 213053af17f98f94c8a594b16b773af6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
