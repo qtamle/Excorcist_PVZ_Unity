@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: kameha
+  m_Name: destroykameha
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,9 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -8173669602454081285, guid: 027c2028686db33488351c1764295551, type: 3}
-    - time: 0.21666667
+      value: {fileID: -8496921358529867078, guid: 027c2028686db33488351c1764295551, type: 3}
+    - time: 0.1
       value: {fileID: 7846342624488506320, guid: 027c2028686db33488351c1764295551, type: 3}
+    - time: 0.21666667
+      value: {fileID: -8173669602454081285, guid: 027c2028686db33488351c1764295551, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -46,8 +48,9 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -8173669602454081285, guid: 027c2028686db33488351c1764295551, type: 3}
+    - {fileID: -8496921358529867078, guid: 027c2028686db33488351c1764295551, type: 3}
     - {fileID: 7846342624488506320, guid: 027c2028686db33488351c1764295551, type: 3}
+    - {fileID: -8173669602454081285, guid: 027c2028686db33488351c1764295551, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

@@ -36,7 +36,7 @@ public class Bolt : MonoBehaviour
         if (explosionPrefab != null)
         {
             GameObject explosion = Instantiate(explosionPrefab, target.transform.position, Quaternion.identity);
-            Destroy(explosion, 0.5f); // Phá hủy vụ nổ sau 1 giây
+            Destroy(explosion, 0.5f);
         }
 
         // Tìm tất cả các zombie trong bán kính nổ
