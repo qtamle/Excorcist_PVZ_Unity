@@ -20,4 +20,5 @@ public class ZombieTypes : ScriptableObject
     public float speed;
 
     public GameObject zombiePrefab;
+
 }
