@@ -9,7 +9,9 @@ public class Bomb : MonoBehaviour
     public float coolDown = 1.0f;
     public LayerMask targetMask;
 
-    public GameObject sunPrefab; 
+    public GameObject sunPrefab;
+    public GameObject audioSourcePrefab;
+    public AudioClip fireSound;
 
     private Gamemanager gameManager;
 
@@ -47,6 +49,15 @@ public class Bomb : MonoBehaviour
         if (gameManager != null)
         {
             gameManager.NotifyPlantRemoved(transform.position);
+        }
+
+        // Phát âm thanh nổ bằng một đối tượng AudioSource riêng biệt
+        if (fireSound != null && audioSourcePrefab != null)
+        {
+            GameObject audioObject = Instantiate(audioSourcePrefab, transform.position, Quaternion.identity);
+            AudioSource audioSource = audioObject.GetComponent<AudioSource>();
+            audioSource.PlayOneShot(fireSound);
+            Destroy(audioObject, fireSound.length);
         }
 
         Destroy(gameObject);

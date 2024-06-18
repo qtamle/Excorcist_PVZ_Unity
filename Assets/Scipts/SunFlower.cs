@@ -7,17 +7,22 @@ public class SunFlower : MonoBehaviour
     public float cooldown;
 
     private Animator animator;
-
+    private AudioSource audioSource;
+    public AudioClip farmSound;
     private void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         InvokeRepeating("SpawnSpirit", cooldown, cooldown);
     }
 
     void SpawnSpirit()
     {
         animator.SetBool("spawn", true);
-
+        if (audioSource != null && farmSound != null)
+        {
+            audioSource.PlayOneShot(farmSound);
+        }
         StartCoroutine(SpawnSunCoroutine());
     }
 

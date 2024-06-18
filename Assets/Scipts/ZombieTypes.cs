@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 [CreateAssetMenu(fileName = "New ZombieType", menuName ="Zombie")]
@@ -18,4 +18,6 @@ public class ZombieTypes : ScriptableObject
     public float eatCooldown = 1f;
 
     public float speed;
+
+    public GameObject zombiePrefab;
 }

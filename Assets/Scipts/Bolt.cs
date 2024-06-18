@@ -9,12 +9,19 @@ public class Bolt : MonoBehaviour
     public float speed = 0.8f;
     public bool freeze;
     public GameObject explosionPrefab;
+    public GameObject audioSourcePrefab; 
+    public AudioClip hitSound;
 
     private Animator animator;
 
     private void Start()
     {
         animator = GetComponent<Animator>();
+
+        if (audioSourcePrefab == null)
+        {
+            Debug.LogError("AudioSource prefab chưa được gán.");
+        }
     }
 
     private void Update()
@@ -26,7 +33,8 @@ public class Bolt : MonoBehaviour
     {
         if (other.TryGetComponent<Zombie>(out Zombie zombie))
         {
-            Explode(zombie); // Kích hoạt hàm vụ nổ khi bắn trúng zombie
+            Explode(zombie);
+            PlayHitSound(); 
             Destroy(gameObject);
         }
     }
@@ -52,4 +60,14 @@ public class Bolt : MonoBehaviour
         }
     }
 
+    void PlayHitSound()
+    {
+        if (hitSound != null && audioSourcePrefab != null)
+        {
+            GameObject audioObject = Instantiate(audioSourcePrefab, transform.position, Quaternion.identity);
+            AudioSource audioSource = audioObject.GetComponent<AudioSource>();
+            audioSource.PlayOneShot(hitSound);
+            Destroy(audioObject, hitSound.length); // Hủy đối tượng sau khi âm thanh đã phát xong
+        }
+    }
 }

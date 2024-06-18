@@ -19,3 +19,4 @@ MonoBehaviour:
   range: 0.5
   eatCooldown: 1
   speed: 0.01
+  zombiePrefab: {fileID: 2694313112654321143, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}

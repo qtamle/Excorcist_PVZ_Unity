@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
-  speed: 0.01
+  speed: 0.5
   health: 10
   range: 0.5
   damage: 2
@@ -108,8 +108,7 @@ MonoBehaviour:
   plantMask:
     serializedVersion: 2
     m_Bits: 512
-  snowAudio: {fileID: 0}
-  sunPrefab: {fileID: 0}
+  snowAudio: {fileID: 8300000, guid: 9800876d260906e49aac82c6de7c4109, type: 3}
 --- !u!61 &2364163317398186655
 BoxCollider2D:
   m_ObjectHideFlags: 0
