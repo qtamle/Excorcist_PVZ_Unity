@@ -11,10 +11,12 @@ public class CoconutCanon : MonoBehaviour
     public LayerMask targetLayer; 
 
     private Animator animator;
-
+    private AudioSource audioSource;
+    public AudioClip shootSound;
     private void Start()
     {
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         Ready(true); 
     }
 
@@ -31,6 +33,10 @@ public class CoconutCanon : MonoBehaviour
 
             if (hit.collider != null && hit.collider.gameObject == gameObject)
             {
+                if (audioSource != null && shootSound != null)
+                {
+                    audioSource.PlayOneShot(shootSound);
+                }
                 StartCoroutine(HandleShooting());
             }
         }

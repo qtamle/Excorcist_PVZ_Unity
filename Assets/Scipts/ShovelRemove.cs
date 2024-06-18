@@ -8,6 +8,7 @@ public class ShovelRemove : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
     private Gamemanager gameManager;
 
     public AudioClip removePlantsound;
+    public AudioClip pickupShovel;
     private AudioSource audioSource;
 
     void Start()
@@ -19,6 +20,10 @@ public class ShovelRemove : MonoBehaviour, IBeginDragHandler, IDragHandler, IEnd
 
     public void OnBeginDrag(PointerEventData eventData)
     {
+        if (audioSource != null && pickupShovel != null)
+        {
+            audioSource.PlayOneShot(pickupShovel);
+        }
         Debug.Log("Bắt đầu kéo");
     }
 
