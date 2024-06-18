@@ -23,7 +23,9 @@ public class Zombie : MonoBehaviour
     public event ZombieKilledHandler OnZombieKilled;
 
     public GameObject sunPrefab; // Thêm tham chiếu tới prefab của Sun
+    private Color originalColor;
 
+    private Color hitColor;
     private void Start()
     {
         health = type.health;
@@ -34,6 +36,9 @@ public class Zombie : MonoBehaviour
 
         GetComponent<SpriteRenderer>().sprite = type.sprite;
         audioSource = GetComponent<AudioSource>();
+        originalColor = GetComponent<SpriteRenderer>().color;
+
+        hitColor = new Color(241f / 255f, 117f / 255f, 134f / 255f);
     }
 
     private void Update()
@@ -70,7 +75,10 @@ public class Zombie : MonoBehaviour
     public void Hit(float damage, bool freeze, bool fromBomb = false)
     {
         health -= damage;
-
+        if (!freeze && !isFrozen)
+        {
+            StartCoroutine(ChangeColorGhost());
+        }
         if (freeze && !isFrozen && audioSource != null && snowAudio != null)
         {
             audioSource.PlayOneShot(snowAudio);
@@ -87,6 +95,14 @@ public class Zombie : MonoBehaviour
         }
     }
 
+    private IEnumerator ChangeColorGhost()
+    {
+        SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer.color = hitColor;
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = isFrozen ? Color.blue : originalColor;
+    }
+
     void Freeze()
     {
         CancelInvoke("UnFreeze");
@@ -100,7 +116,7 @@ public class Zombie : MonoBehaviour
 
     void UnFreeze()
     {
-        GetComponent<SpriteRenderer>().color = Color.white;
+        GetComponent<SpriteRenderer>().color = originalColor;
         speed = type.speed;
         isFrozen = false;
     }
