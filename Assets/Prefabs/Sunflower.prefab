@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -6715595053930913549, guid: 65991d25932f6154f8f6fed6224431e6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -162,7 +162,6 @@ MonoBehaviour:
   sunObject: {fileID: 8941859066562654438, guid: 984883a73577c1248b2911fe98f9e5b3, type: 3}
   cooldown: 10
   farmSound: {fileID: 8300000, guid: 8fae6034724aebc45b6215d2cae2e0ea, type: 3}
-  soundVolume: 0.5
 --- !u!95 &-5844791444340947203
 Animator:
   serializedVersion: 5
