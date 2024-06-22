@@ -12385,17 +12385,7 @@ MonoBehaviour:
   - {fileID: 1632065048}
   waveGhosts:
   - zombieTypes:
-    - type: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
-      probability: 5
-    - type: {fileID: 11400000, guid: 15843869bb364104db036b5a45a0943e, type: 2}
-      probability: 4
-    defeatedCount: 1
-  - zombieTypes:
-    - type: {fileID: 11400000, guid: f205f5d836fd72444a8c97e1b4be2303, type: 2}
-      probability: 5
-    defeatedCount: 1
-  - zombieTypes:
-    - type: {fileID: 11400000, guid: 15843869bb364104db036b5a45a0943e, type: 2}
+    - type: {fileID: 11400000, guid: 7c113d6b25f91a4469ce3ba4ea616e57, type: 2}
       probability: 5
     defeatedCount: 1
   zombieMax: 15

@@ -26,6 +26,13 @@ public class Zombie : MonoBehaviour
     private Color originalColor;
 
     private Color hitColor;
+
+    public bool EnhancedGhost = false;
+
+    public bool isRugbyGhost = false;
+
+    private bool hasDestroyedTarget = false;
+
     private void Start()
     {
         health = type.health;
@@ -39,18 +46,45 @@ public class Zombie : MonoBehaviour
         originalColor = GetComponent<SpriteRenderer>().color;
 
         hitColor = new Color(241f / 255f, 117f / 255f, 134f / 255f);
-    }
 
+        if (isRugbyGhost)
+        {
+            speed = 0.05f; 
+            damage = 100f; 
+        }
+        else
+        {
+            speed = type.speed;
+        }
+
+    }
     private void Update()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.left, range, plantMask);
 
-        if (hit.collider)
+        if (hit.collider && !hasDestroyedTarget)
         {
+            hasDestroyedTarget = true;
             targetPlant = hit.collider.GetComponent<Plant>();
-            Eat();
+            if (targetPlant != null)
+            {
+                targetPlant.Hit(damage);
+            }
+            if (health > 0)
+            {
+                speed = 0.01f;
+                damage = 2f;
+            }
+        }
+
+        if (EnhancedGhost && health <= 10)
+        {
+            damage *= 1.5f;
+            speed *= 1.5f;
+            EnhancedGhost = false;
         }
     }
+
 
     void Eat()
     {
@@ -84,6 +118,10 @@ public class Zombie : MonoBehaviour
             audioSource.PlayOneShot(snowAudio);
             Freeze();
         }
+        if (health <= 10 && !EnhancedGhost)
+        {
+            EnhancedGhost = true;
+        }
         if (health <= 0)
         {
             GetComponent<SpriteRenderer>().sprite = type.deathSprite;
@@ -94,6 +132,7 @@ public class Zombie : MonoBehaviour
             Destroy(gameObject, 0.5f);
         }
     }
+
 
     private IEnumerator ChangeColorGhost()
     {
@@ -109,7 +148,15 @@ public class Zombie : MonoBehaviour
 
         GetComponent<SpriteRenderer>().color = Color.blue;
         isFrozen = true;
-        speed = type.speed / 2;
+
+        if (isRugbyGhost)
+        {
+            speed = 0.01f;
+        }
+        else if (!EnhancedGhost || health > 10)
+        {
+            speed = type.speed / 2;
+        }
 
         Invoke("UnFreeze", 8);
     }
@@ -117,7 +164,20 @@ public class Zombie : MonoBehaviour
     void UnFreeze()
     {
         GetComponent<SpriteRenderer>().color = originalColor;
-        speed = type.speed;
         isFrozen = false;
+
+        if (isRugbyGhost)
+        {
+            speed = 0.05f;
+        }
+        else if (EnhancedGhost && health > 0 && health <= 10)
+        {
+            speed = type.speed * 1.5f;
+        }
+        else
+        {
+            speed = type.speed;
+        }
     }
+
 }
