@@ -110,6 +110,8 @@ MonoBehaviour:
     m_Bits: 512
   snowAudio: {fileID: 8300000, guid: 9800876d260906e49aac82c6de7c4109, type: 3}
   sunPrefab: {fileID: 0}
+  EnhancedGhost: 0
+  isRugbyGhost: 0
 --- !u!61 &2364163317398186655
 BoxCollider2D:
   m_ObjectHideFlags: 0

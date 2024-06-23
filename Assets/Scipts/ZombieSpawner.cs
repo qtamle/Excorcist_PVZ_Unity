@@ -10,23 +10,30 @@ public class ZombieSpawner : MonoBehaviour
 
     private List<ZombieTypes> probList = new List<ZombieTypes>();
 
-    public int zombieMax;
     public int zombiesSpawned;
+    public int zombiesDefeated;
     public Slider progressBar;
     public float zombieDelay = 5;
     public AudioClip zombieSpawnAudio;
     public AudioClip zombieComing;
-    public Image centerImage; // Reference to the center Image on the screen
+    public Image centerImage;
 
     private AudioSource audioSource;
     private bool firstZombieSpawned = false;
     private int currentWaveIndex = 0;
     private Animator animator;
+
+    public GameObject giftPrefab;
+
+    private bool gameEnded = false;
+
     private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         HideCenterImage();
         animator = GetComponent<Animator>();
+
+        // Khởi động wave đầu tiên
         StartNextWave();
     }
 
@@ -40,6 +47,7 @@ public class ZombieSpawner : MonoBehaviour
         if (currentWaveIndex >= waveGhosts.Length)
         {
             Debug.Log("All waves completed.");
+            StartCoroutine(WaitAndEndGame());
             return;
         }
 
@@ -53,11 +61,10 @@ public class ZombieSpawner : MonoBehaviour
         }
 
         zombiesSpawned = 0;
+        zombiesDefeated = 0;
         progressBar.maxValue = waveGhosts[currentWaveIndex].defeatedCount;
         InvokeRepeating("SpawnZombie", 10, zombieDelay);
 
-
-        // Show centerImage at the start of the next wave
         if (centerImage != null)
         {
             centerImage.gameObject.SetActive(true);
@@ -68,25 +75,24 @@ public class ZombieSpawner : MonoBehaviour
         {
             audioSource.PlayOneShot(zombieComing);
         }
-
     }
 
     void SpawnZombie()
     {
-        zombiesSpawned++;
         int r = Random.Range(0, spawnpoints.Length);
 
-        GameObject myZombie = Instantiate(probList[Random.Range(0, probList.Count)].zombiePrefab, spawnpoints[r].position, Quaternion.identity);
+        ZombieTypes selectedZombieType = probList[Random.Range(0, probList.Count)];
+        GameObject myZombie = Instantiate(selectedZombieType.zombiePrefab, spawnpoints[r].position, Quaternion.identity);
 
-        // Attach Zombie component if not already attached
         Zombie zombieComponent = myZombie.GetComponent<Zombie>();
         if (zombieComponent == null)
         {
             zombieComponent = myZombie.AddComponent<Zombie>();
         }
-        zombieComponent.type = probList[Random.Range(0, probList.Count)];
+        zombieComponent.type = selectedZombieType;
 
-        // Play spawn audio
+        zombiesSpawned++;
+
         if (!firstZombieSpawned && audioSource != null && zombieSpawnAudio != null)
         {
             audioSource.PlayOneShot(zombieSpawnAudio);
@@ -96,13 +102,37 @@ public class ZombieSpawner : MonoBehaviour
         if (zombiesSpawned >= waveGhosts[currentWaveIndex].defeatedCount)
         {
             CancelInvoke("SpawnZombie");
-            StartCoroutine(WaitAndStartNextWave());
+            if (currentWaveIndex == waveGhosts.Length - 1)
+            {
+                // Đây là wave cuối cùng
+                StartCoroutine(WaitAndEndGame());
+            }
+            else
+            {
+                StartCoroutine(WaitAndStartNextWave());
+            }
+        }
+    }
+
+    public void OnZombieDefeated()
+    {
+        zombiesDefeated++;
+        Debug.Log($"Zombies Defeated: {zombiesDefeated}");
+
+        if (currentWaveIndex == waveGhosts.Length - 1 && zombiesDefeated >= waveGhosts[currentWaveIndex].defeatedCount)
+        {
+            Vector3 lastZombiePosition = FindLastZombiePosition();
+            if (lastZombiePosition != Vector3.zero && giftPrefab != null)
+            {
+                Instantiate(giftPrefab, lastZombiePosition, Quaternion.identity);
+            }
+            gameEnded = true;
+            StartCoroutine(WaitAndEndGame());
         }
     }
 
     IEnumerator WaitAndStartNextWave()
     {
-        // Wait until all zombies of the current wave are defeated
         while (zombiesSpawned < waveGhosts[currentWaveIndex].defeatedCount)
         {
             yield return null;
@@ -113,11 +143,33 @@ public class ZombieSpawner : MonoBehaviour
             Debug.Log($"Preparing to start next wave in {i} second(s)...");
             yield return new WaitForSeconds(1);
         }
-        // Hide centerImage before starting the next wave
         HideCenterImage();
 
         currentWaveIndex++;
         StartNextWave();
+    }
+
+    IEnumerator WaitAndEndGame()
+    {
+        // Chờ cho đến khi tất cả zombie trong game bị tiêu diệt
+        while (GameObject.FindWithTag("Ghost") != null)
+        {
+            yield return null;
+        }
+
+        Debug.Log("All zombies defeated. Game over!");
+
+        if (!gameEnded)
+        {
+            gameEnded = true;
+
+            // Tạo món quà ở giữa màn hình
+            if (giftPrefab != null)
+            {
+                Vector3 giftPosition = GetGiftPosition();
+                Instantiate(giftPrefab, giftPosition, Quaternion.identity);
+            }
+        }
     }
 
     IEnumerator HideCenterImageAfterDelay(float delay)
@@ -132,6 +184,27 @@ public class ZombieSpawner : MonoBehaviour
         {
             centerImage.gameObject.SetActive(false);
         }
+    }
+
+    Vector3 GetGiftPosition()
+    {
+        // Đặt món quà ở giữa màn hình
+        return Vector3.zero;
+    }
+
+    Vector3 FindLastZombiePosition()
+    {
+        // Tìm vị trí của con zombie cuối cùng
+        Zombie[] zombies = FindObjectsOfType<Zombie>();
+        Vector3 lastPosition = Vector3.zero;
+        foreach (Zombie zombie in zombies)
+        {
+            if (zombie != null && zombie.gameObject.activeSelf)
+            {
+                lastPosition = zombie.transform.position;
+            }
+        }
+        return lastPosition;
     }
 
     [System.Serializable]
