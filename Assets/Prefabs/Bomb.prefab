@@ -126,7 +126,7 @@ MonoBehaviour:
   targetMask:
     serializedVersion: 2
     m_Bits: 128
-  sunPrefab: {fileID: 8941859066562654438, guid: 984883a73577c1248b2911fe98f9e5b3, type: 3}
+  sunPrefab: {fileID: 8941859066562654438, guid: 86305705410e92b4ab00c95af8c042ae, type: 3}
   audioSourcePrefab: {fileID: 50082669054811655, guid: a58a780c088a5354c8c2b5f7bbdc9535, type: 3}
   fireSound: {fileID: 8300000, guid: 1af1e1249a15f174990496fc3effcbc0, type: 3}
 --- !u!82 &5547382850249276998

@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -5425218106081821789}
   m_Layer: 7
   m_Name: gh 2
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 2694313112654321143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6797, y: -2.1241, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: 3.8109, y: -1.8618, z: 0}
+  m_LocalScale: {x: 0.96235996, y: 0.96235996, z: 0.96235996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a10b90f20aae0488c056ab02862709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
+  type: {fileID: 11400000, guid: 15843869bb364104db036b5a45a0943e, type: 2}
   speed: 0.01
   health: 20
   range: 0.5
@@ -111,7 +111,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   snowAudio: {fileID: 8300000, guid: 9800876d260906e49aac82c6de7c4109, type: 3}
-  sunPrefab: {fileID: 8941859066562654438, guid: 984883a73577c1248b2911fe98f9e5b3, type: 3}
+  sunPrefab: {fileID: 8941859066562654438, guid: 86305705410e92b4ab00c95af8c042ae, type: 3}
 --- !u!61 &2364163317398186655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -144,7 +144,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.05345902, y: 0.0088967085}
+  m_Offset: {x: 0.05345905, y: -0.03815399}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -155,7 +155,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.018547, y: 1.5689843}
+  m_Size: {x: 1.018547, y: 0.78278136}
   m_EdgeRadius: 0
 --- !u!95 &1512592277546410068
 Animator:

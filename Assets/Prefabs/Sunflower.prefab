@@ -159,7 +159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 445836d62e5c2c7488fd9653d6caeea8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sunObject: {fileID: 8941859066562654438, guid: 984883a73577c1248b2911fe98f9e5b3, type: 3}
+  sunObject: {fileID: 8941859066562654438, guid: 86305705410e92b4ab00c95af8c042ae, type: 3}
   cooldown: 10
   farmSound: {fileID: 8300000, guid: 8fae6034724aebc45b6215d2cae2e0ea, type: 3}
 --- !u!95 &-5844791444340947203

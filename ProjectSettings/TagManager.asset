@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Audio
   - Coconut
+  - Ghost
+  - LuaBua
+  - Gift
   layers:
   - Default
   - TransparentFX
@@ -18,7 +21,7 @@ TagManager:
   - sun
   - Plant
   - Coconut
-  - 
+  - Talisman
   - 
   - 
   - 

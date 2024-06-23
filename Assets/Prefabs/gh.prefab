@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -7097515336645880690}
   m_Layer: 7
   m_Name: gh
-  m_TagString: Untagged
+  m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 2694313112654321143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.6797, y: -2.1241, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: 3.9475, y: -1.849, z: 0}
+  m_LocalScale: {x: 0.93162996, y: 0.93162996, z: 0.93162996}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -106,13 +106,13 @@ MonoBehaviour:
   health: 15
   range: 0.5
   damage: 2
-  eatCooldown: 1
+  eatCooldown: 0.5
   targetPlant: {fileID: 0}
   plantMask:
     serializedVersion: 2
     m_Bits: 512
   snowAudio: {fileID: 8300000, guid: 9800876d260906e49aac82c6de7c4109, type: 3}
-  sunPrefab: {fileID: 8941859066562654438, guid: 984883a73577c1248b2911fe98f9e5b3, type: 3}
+  sunPrefab: {fileID: 8941859066562654438, guid: 86305705410e92b4ab00c95af8c042ae, type: 3}
 --- !u!61 &2364163317398186655
 BoxCollider2D:
   m_ObjectHideFlags: 0

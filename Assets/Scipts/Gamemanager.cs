@@ -101,7 +101,8 @@ public class Gamemanager : MonoBehaviour
         float startTime = Time.time;
         Vector3 startPosition = sun.transform.position;
 
-        while (Time.time < startTime + sunMovementSpeed)
+        // Di chuyển và biến mất chỉ khi sun chưa bị hủy bỏ
+        while (sun != null && Time.time < startTime + sunMovementSpeed)
         {
             float t = (Time.time - startTime) / sunMovementSpeed;
             sun.transform.position = Vector3.Lerp(startPosition, targetPosition, t);
@@ -111,7 +112,11 @@ public class Gamemanager : MonoBehaviour
         // Đợi một khoảng thời gian trước khi mặt trời biến mất
         yield return new WaitForSeconds(sunDisappearDelay);
 
-        Destroy(sun);
+        // Kiểm tra lại trước khi hủy bỏ sun
+        if (sun != null)
+        {
+            Destroy(sun);
+        }
     }
 
     void UpdateSunText()

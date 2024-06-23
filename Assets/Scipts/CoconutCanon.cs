@@ -60,20 +60,20 @@ public class CoconutCanon : MonoBehaviour
     {
         yield return new WaitForSeconds(cooldownTime);
         canShoot = true;
-        Ready(true); // Return to Ready state after cooldown
+        Ready(true); 
     }
 
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, bulletSpawnPoint.position, Quaternion.identity);
-        bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(10f, 0f); // Shoot the bullet to the right
+        bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(10f, 0f); 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.layer == targetLayer)
         {
-            Destroy(collision.gameObject); // Destroy the object when it collides with the specified LayerMask
+            Destroy(collision.gameObject); 
         }
     }
 

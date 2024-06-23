@@ -32,6 +32,7 @@ public class Plant : MonoBehaviour
     {
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = Color.gray;
-        yield return new WaitForSeconds(0.01f);
+        yield return new WaitForSeconds(0.1f);
+        spriteRenderer.color = originalColor;
     }
 }
