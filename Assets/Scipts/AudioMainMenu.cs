@@ -1,10 +1,12 @@
 using UnityEngine;
 
-public class Audio : MonoBehaviour
+public class AudioMainMenu : MonoBehaviour
 {
     public AudioSource music;
     public AudioSource vfx;
+
     public AudioClip musicMain;
+    public AudioClip sfxButton;
 
     private void Start()
     {
@@ -14,6 +16,7 @@ public class Audio : MonoBehaviour
 
     public void PlaySFX(AudioClip sfxClip)
     {
+        vfx.clip = sfxClip;
         vfx.PlayOneShot(sfxClip);
     }
 

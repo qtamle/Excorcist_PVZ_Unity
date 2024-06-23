@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c3e69c7407cec47a2114aab411bb44, type: 3}
   m_Name: MaNu
   m_EditorClassIdentifier: 
-  health: 20
+  health: 30
   damage: 2
   sprite: {fileID: 21300000, guid: 5f2512463a6043f4e86f9ee7d8bd938b, type: 3}
   deathSprite: {fileID: 0}

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c3e69c7407cec47a2114aab411bb44, type: 3}
   m_Name: Default
   m_EditorClassIdentifier: 
-  health: 15
+  health: 18
   damage: 2
   sprite: {fileID: 6224631773077241828, guid: 8a2969dc4341bc64294d99e0d8908e7b, type: 3}
   deathSprite: {fileID: 0}

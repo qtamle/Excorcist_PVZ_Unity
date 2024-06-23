@@ -8,7 +8,7 @@ public class ZombieSpawner : MonoBehaviour
     public Transform[] spawnpoints;
     public WaveGhost[] waveGhosts;
 
-    private List<ZombieTypes> probList = new List<ZombieTypes>();
+    private List<ZombieType> probList = new List<ZombieType>();
 
     public int zombiesSpawned;
     public int zombiesDefeated;
@@ -56,7 +56,7 @@ public class ZombieSpawner : MonoBehaviour
         {
             for (int i = 0; i < zom.probability; i++)
             {
-                probList.Add(zom.type);
+                probList.Add(zom);
             }
         }
 
@@ -81,15 +81,15 @@ public class ZombieSpawner : MonoBehaviour
     {
         int r = Random.Range(0, spawnpoints.Length);
 
-        ZombieTypes selectedZombieType = probList[Random.Range(0, probList.Count)];
-        GameObject myZombie = Instantiate(selectedZombieType.zombiePrefab, spawnpoints[r].position, Quaternion.identity);
+        ZombieType selectedZombieType = probList[Random.Range(0, probList.Count)];
+        GameObject myZombie = Instantiate(selectedZombieType.type.zombiePrefab, spawnpoints[r].position, Quaternion.identity);
 
         Zombie zombieComponent = myZombie.GetComponent<Zombie>();
         if (zombieComponent == null)
         {
             zombieComponent = myZombie.AddComponent<Zombie>();
         }
-        zombieComponent.type = selectedZombieType;
+        zombieComponent.type = selectedZombieType.type;
 
         zombiesSpawned++;
 
@@ -124,7 +124,8 @@ public class ZombieSpawner : MonoBehaviour
             Vector3 lastZombiePosition = FindLastZombiePosition();
             if (lastZombiePosition != Vector3.zero && giftPrefab != null)
             {
-                Instantiate(giftPrefab, lastZombiePosition, Quaternion.identity);
+                GameObject gift = Instantiate(giftPrefab, lastZombiePosition, Quaternion.identity);
+                gift.AddComponent<Gift>();
             }
             gameEnded = true;
             StartCoroutine(WaitAndEndGame());
@@ -167,10 +168,13 @@ public class ZombieSpawner : MonoBehaviour
             if (giftPrefab != null)
             {
                 Vector3 giftPosition = GetGiftPosition();
-                Instantiate(giftPrefab, giftPosition, Quaternion.identity);
+                GameObject gift = Instantiate(giftPrefab, giftPosition, Quaternion.identity);
+
+                gift.AddComponent<Gift>();
             }
         }
     }
+
 
     IEnumerator HideCenterImageAfterDelay(float delay)
     {

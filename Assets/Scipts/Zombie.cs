@@ -26,6 +26,12 @@ public class Zombie : MonoBehaviour
     private Color originalColor;
 
     private Color hitColor;
+
+    public bool Witch = false;
+     
+    public bool Rugby = true;
+
+    public bool hasCollided = false;
     private void Start()
     {
         health = type.health;
@@ -39,6 +45,12 @@ public class Zombie : MonoBehaviour
         originalColor = GetComponent<SpriteRenderer>().color;
 
         hitColor = new Color(241f / 255f, 117f / 255f, 134f / 255f);
+
+        if (Rugby)
+        {
+            damage = 100f;
+            speed = 0.1f;
+        }
     }
 
     private void Update()
@@ -56,10 +68,21 @@ public class Zombie : MonoBehaviour
     {
         if (!canEat || !targetPlant)
             return;
+
         canEat = false;
         Invoke("ResetEatCooldown", eatCooldown);
         targetPlant.Hit(damage);
+
+        if (Rugby && !hasCollided)
+        {
+            speed = type.speed;
+            damage = type.damage;
+
+            // Đánh dấu rằng zombie đã va chạm
+            hasCollided = true;
+        }
     }
+
 
     void ResetEatCooldown()
     {
@@ -72,27 +95,39 @@ public class Zombie : MonoBehaviour
             transform.position -= new Vector3(speed, 0, 0);
     }
 
-    public void Hit(float damage, bool freeze, bool fromBomb = false)
+    public void Hit(float incomingDamage, bool freeze, bool fromBomb = false)
     {
-        health -= damage;
+        health -= incomingDamage;
+
         if (!freeze && !isFrozen)
         {
             StartCoroutine(ChangeColorGhost());
         }
+
         if (freeze && !isFrozen && audioSource != null && snowAudio != null)
         {
             audioSource.PlayOneShot(snowAudio);
             Freeze();
         }
+
         if (health <= 0)
         {
             GetComponent<SpriteRenderer>().sprite = type.deathSprite;
-            if (OnZombieKilled != null)
-            {
-                OnZombieKilled.Invoke(fromBomb, transform.position);
-            }
+            OnZombieKilled?.Invoke(fromBomb, transform.position);
             Destroy(gameObject, 0.5f);
         }
+
+        if (Witch && health > 0 && health <= 15)
+        {
+            IncreaseStats(incomingDamage);
+        }
+    }
+
+    private void IncreaseStats(float damageAmount)
+    {
+        float increaseFactor = damageAmount / 15.0f;
+        speed += type.speed * increaseFactor * 2f; 
+        damage += type.damage * increaseFactor * 5f;
     }
 
     private IEnumerator ChangeColorGhost()
@@ -108,8 +143,9 @@ public class Zombie : MonoBehaviour
         CancelInvoke("UnFreeze");
 
         GetComponent<SpriteRenderer>().color = Color.blue;
-        isFrozen = true;
         speed = type.speed / 2;
+        isFrozen = true;
+
         Invoke("UnFreeze", 8);
     }
 
@@ -122,15 +158,10 @@ public class Zombie : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Kiểm tra xem va chạm với lá bùa không
         if (collision.CompareTag("LuaBua"))
         {
             Talisman luaBua = collision.GetComponent<Talisman>();
-            if (luaBua != null)
-            {
-                luaBua.FireBullet();
-            }
+            luaBua?.FireBullet();
         }
     }
-
 }

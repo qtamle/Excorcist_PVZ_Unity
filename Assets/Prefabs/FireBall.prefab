@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 1
-  speed: 0.9
+  speed: 1.5
   freeze: 0
 --- !u!50 &1806027041724530367
 Rigidbody2D:
