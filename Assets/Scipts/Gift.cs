@@ -9,10 +9,12 @@ public class Gift : MonoBehaviour
     public AudioClip soundWin;
     public ParticleSystem fireworksEffect;
     public string nextScene;
+
     private void Start()
     {
         audioManager = FindObjectOfType<Audio>();
         audioSource = GetComponent<AudioSource>();
+
         if (audioManager == null)
         {
             Debug.LogError("AudioManager not found in the scene!");
@@ -63,8 +65,24 @@ public class Gift : MonoBehaviour
         // Hiệu ứng zoom
         yield return StartCoroutine(ZoomToCenter());
 
-        
-        SceneManager.LoadScene(nextScene);
+        // Load scene
+        if (!string.IsNullOrEmpty(nextScene))
+        {
+            // Kiểm tra xem Scene có tồn tại trong build settings hay không
+            if (SceneExistsInBuildSettings(nextScene))
+            {
+                Debug.Log("Loading scene: " + nextScene);
+                SceneManager.LoadScene(nextScene);
+            }
+            else
+            {
+                Debug.LogError("Scene '" + nextScene + "' is not found in build settings!");
+            }
+        }
+        else
+        {
+            Debug.LogError("Next scene name is empty or not assigned!");
+        }
     }
 
     private IEnumerator ZoomToCenter()
@@ -90,5 +108,20 @@ public class Gift : MonoBehaviour
 
         transform.position = targetWorldPosition;
         transform.localScale = targetScale;
+    }
+
+    private bool SceneExistsInBuildSettings(string sceneName)
+    {
+        for (int i = 0; i < SceneManager.sceneCountInBuildSettings; i++)
+        {
+            string scenePath = SceneUtility.GetScenePathByBuildIndex(i);
+            string sceneNameWithoutExtension = System.IO.Path.GetFileNameWithoutExtension(scenePath);
+
+            if (sceneNameWithoutExtension == sceneName)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Map1.1.unity
     guid: f508797f76cf06049920ee59d34f4b99
   - enabled: 1
-    path: Assets/Scenes/Map1.2.unity
+    path: Assets/Scenes/Map2.unity
     guid: 57e62b157c0bacb42b46bf2fc9e0a875
   - enabled: 1
     path: Assets/Scenes/Map1.3.unity
@@ -20,8 +20,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Map1.4.unity
     guid: 7f99b7bb373b5114692db4e679935dc1
-  - enabled: 1
-    path: Assets/Scenes/Map2.unity
+  - enabled: 0
+    path: Assets/Scenes/MapCustom.unity
     guid: 582d818eacd7a0241a20482b97cb6b2a
   - enabled: 1
     path: Assets/Scenes/MapScene.unity
