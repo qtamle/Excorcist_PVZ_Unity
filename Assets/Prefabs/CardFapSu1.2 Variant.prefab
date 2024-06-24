@@ -52,6 +52,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 732bee36909f52944b5bd68fdc8eba53, type: 3}
+    - target: {fileID: 5928595251418020491, guid: 9d5c9e7234ee54a4da403ba454678847, type: 3}
+      propertyPath: nextScene
+      value: Map1.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7670607656266475301, guid: 9d5c9e7234ee54a4da403ba454678847, type: 3}
       propertyPath: m_Name
       value: CardFapSu1.2 Variant

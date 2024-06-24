@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 481042743061845, guid: ac20683d4fb909c41bcc5cf2771f8c16, type: 3}
+      propertyPath: nextScene
+      value: Map1.4
+      objectReference: {fileID: 0}
     - target: {fileID: 4049955960123519227, guid: ac20683d4fb909c41bcc5cf2771f8c16, type: 3}
       propertyPath: m_Name
       value: CardFapSu1.3 Variant

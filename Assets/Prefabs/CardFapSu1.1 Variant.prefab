@@ -16,6 +16,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 2.65
       objectReference: {fileID: 0}
+    - target: {fileID: 2016997311484897335, guid: 7e7a77e9551a2ac4e9fa0ea38c9c2727, type: 3}
+      propertyPath: nextScene
+      value: Map1.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2578364266747311513, guid: 7e7a77e9551a2ac4e9fa0ea38c9c2727, type: 3}
       propertyPath: m_Name
       value: CardFapSu1.1 Variant
@@ -26,11 +30,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: b3c8bddd4af0dc64a97af68284ba7102, type: 3}
     - target: {fileID: 8913618411675156732, guid: 7e7a77e9551a2ac4e9fa0ea38c9c2727, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.79506344
+      value: -9.12
       objectReference: {fileID: 0}
     - target: {fileID: 8913618411675156732, guid: 7e7a77e9551a2ac4e9fa0ea38c9c2727, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.40851536
+      value: -2.04
       objectReference: {fileID: 0}
     - target: {fileID: 8913618411675156732, guid: 7e7a77e9551a2ac4e9fa0ea38c9c2727, type: 3}
       propertyPath: m_LocalPosition.z

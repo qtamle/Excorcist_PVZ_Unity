@@ -8,7 +8,7 @@ public class Gift : MonoBehaviour
     private AudioSource audioSource;
     public AudioClip soundWin;
     public ParticleSystem fireworksEffect;
-
+    public string nextScene;
     private void Start()
     {
         audioManager = FindObjectOfType<Audio>();
@@ -63,8 +63,8 @@ public class Gift : MonoBehaviour
         // Hiệu ứng zoom
         yield return StartCoroutine(ZoomToCenter());
 
-        // Chuyển đến màn hình chính sau khi hoàn tất
-        SceneManager.LoadScene("MainMenu");
+        
+        SceneManager.LoadScene(nextScene);
     }
 
     private IEnumerator ZoomToCenter()

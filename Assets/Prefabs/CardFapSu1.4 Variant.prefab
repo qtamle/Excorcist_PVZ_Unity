@@ -56,6 +56,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CardFapSu1.4 Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 9116896189694215515, guid: 6de0a81456cc1504f9b49ee02b3ae6b6, type: 3}
+      propertyPath: nextScene
+      value: Map2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
