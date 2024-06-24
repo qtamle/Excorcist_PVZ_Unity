@@ -13,12 +13,24 @@ PrefabInstance:
       value: shootkamehaCiy Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4508924469435162075, guid: 625fdbd865875474f9f7752329df364b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.2666492
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508924469435162075, guid: 625fdbd865875474f9f7752329df364b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.2666492
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508924469435162075, guid: 625fdbd865875474f9f7752329df364b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.2666492
+      objectReference: {fileID: 0}
+    - target: {fileID: 4508924469435162075, guid: 625fdbd865875474f9f7752329df364b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6646233
+      value: 2.2156
       objectReference: {fileID: 0}
     - target: {fileID: 4508924469435162075, guid: 625fdbd865875474f9f7752329df364b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -5.390797
+      value: -4.8398
       objectReference: {fileID: 0}
     - target: {fileID: 4508924469435162075, guid: 625fdbd865875474f9f7752329df364b, type: 3}
       propertyPath: m_LocalPosition.z

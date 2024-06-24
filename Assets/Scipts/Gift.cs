@@ -7,11 +7,10 @@ public class Gift : MonoBehaviour
     private Audio audioManager;
     private AudioSource audioSource;
     public AudioClip soundWin;
-    public ParticleSystem fireworksEffect; // Thêm trường này để tham chiếu đến Particle System
+    public ParticleSystem fireworksEffect;
 
     private void Start()
     {
-        // Lấy tham chiếu đến AudioManager từ SceneManager
         audioManager = FindObjectOfType<Audio>();
         audioSource = GetComponent<AudioSource>();
         if (audioManager == null)
@@ -19,13 +18,11 @@ public class Gift : MonoBehaviour
             Debug.LogError("AudioManager not found in the scene!");
         }
 
-        // Lấy tham chiếu đến Particle System nếu chưa có
         if (fireworksEffect == null)
         {
             fireworksEffect = GetComponent<ParticleSystem>();
         }
 
-        // Tắt Particle System ban đầu
         if (fireworksEffect != null)
         {
             fireworksEffect.Stop();
@@ -34,26 +31,12 @@ public class Gift : MonoBehaviour
 
     private void OnMouseDown()
     {
-        StartCoroutine(LoadMainMenuAfterDelay(5f)); // Load scene MainMenu sau 5 giây
-
-        if (audioSource != null && soundWin != null)
-        {
-            audioSource.PlayOneShot(soundWin);
-        }
-
-        // Đổi màu sắc của Particle System thành màu đỏ và kích hoạt nó
-        if (fireworksEffect != null)
-        {
-            var mainModule = fireworksEffect.main;
-            mainModule.startColor = new ParticleSystem.MinMaxGradient(Color.white);
-
-            fireworksEffect.Play();
-        }
+        StartCoroutine(ZoomAndPlayEffect());
     }
 
-    IEnumerator LoadMainMenuAfterDelay(float delay)
+    private IEnumerator ZoomAndPlayEffect()
     {
-        // Dừng âm thanh từ AudioManager
+        // Dừng nhạc từ AudioManager
         if (audioManager != null)
         {
             audioManager.StopMusic();
@@ -63,9 +46,49 @@ public class Gift : MonoBehaviour
             Debug.LogError("AudioManager reference is null!");
         }
 
-        yield return new WaitForSeconds(delay);
+        // Phát âm thanh
+        if (audioSource != null && soundWin != null)
+        {
+            audioSource.PlayOneShot(soundWin);
+        }
 
-        // Load scene MainMenu
+        // Phát hiệu ứng pháo hoa
+        if (fireworksEffect != null)
+        {
+            var mainModule = fireworksEffect.main;
+            mainModule.startColor = new ParticleSystem.MinMaxGradient(Color.white);
+            fireworksEffect.Play();
+        }
+
+        // Hiệu ứng zoom
+        yield return StartCoroutine(ZoomToCenter());
+
+        // Chuyển đến màn hình chính sau khi hoàn tất
         SceneManager.LoadScene("MainMenu");
+    }
+
+    private IEnumerator ZoomToCenter()
+    {
+        Vector3 targetPosition = new Vector3(Screen.width / 2, Screen.height / 2, 0);
+        Vector3 targetWorldPosition = Camera.main.ScreenToWorldPoint(new Vector3(targetPosition.x, targetPosition.y, Camera.main.nearClipPlane));
+        targetWorldPosition.z = transform.position.z;
+
+        Vector3 startPosition = transform.position;
+        Vector3 startScale = transform.localScale;
+        Vector3 targetScale = new Vector3(3f, 3f, 3f); // tỉ lệ trophy zoom vào
+
+        float duration = 5f; // Thời gian thực hiện hiệu ứng zoom
+        float elapsed = 0f;
+
+        while (elapsed < duration)
+        {
+            transform.position = Vector3.Lerp(startPosition, targetWorldPosition, elapsed / duration);
+            transform.localScale = Vector3.Lerp(startScale, targetScale, elapsed / duration);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        transform.position = targetWorldPosition;
+        transform.localScale = targetScale;
     }
 }

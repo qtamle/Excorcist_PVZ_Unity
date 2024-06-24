@@ -60,6 +60,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SonGOKU Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 8641796209497451442, guid: b0ff258222b56c345aebb2761102e20e, type: 3}
+      propertyPath: bulletPrefab
+      value: 
+      objectReference: {fileID: 4737239822107008358, guid: 86684a68df4eaf245bbd95dda9a4ce60, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
