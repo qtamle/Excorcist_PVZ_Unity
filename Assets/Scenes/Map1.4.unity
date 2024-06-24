@@ -13257,7 +13257,7 @@ PrefabInstance:
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: giftPrefab
       value: 
-      objectReference: {fileID: 2578364266747311513, guid: 7e7a77e9551a2ac4e9fa0ea38c9c2727, type: 3}
+      objectReference: {fileID: 6408441885756010075, guid: b0ff258222b56c345aebb2761102e20e, type: 3}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: centerImage
       value: 
