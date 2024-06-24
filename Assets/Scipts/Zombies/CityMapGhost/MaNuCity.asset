@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3c3e69c7407cec47a2114aab411bb44, type: 3}
-  m_Name: Rugby
+  m_Name: MaNuCity
   m_EditorClassIdentifier: 
-  health: 40
+  health: 30
   damage: 2
-  sprite: {fileID: 3629252678272692788, guid: 597b6a5dedf02a54c9beb1b3b0d14a47, type: 3}
+  sprite: {fileID: -1028240781447473825, guid: 81edf0951c8ad4345849e9da967b2bb6, type: 3}
   deathSprite: {fileID: 0}
   range: 0.5
   eatCooldown: 1
   speed: 0.01
-  zombiePrefab: {fileID: 2694313112654321143, guid: 287d33cc48b0fa84fbff0e2202ec354f, type: 3}
+  zombiePrefab: {fileID: 6111336348169702392, guid: 6189dbc4efbdb5f48ab070a601fdc97a, type: 3}

@@ -160,7 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sunObject: {fileID: 8941859066562654438, guid: 86305705410e92b4ab00c95af8c042ae, type: 3}
-  cooldown: 10
+  cooldown: 18
   farmSound: {fileID: 8300000, guid: 8fae6034724aebc45b6215d2cae2e0ea, type: 3}
 --- !u!95 &-5844791444340947203
 Animator:

@@ -12359,7 +12359,7 @@ PrefabInstance:
       objectReference: {fileID: 1768095696}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: zombieDelay
-      value: 5
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: centerPrefab
@@ -12371,7 +12371,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 3c599024600d9204ab295f9237d2ee26, type: 3}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: spawnpoints.Array.size
@@ -12411,11 +12411,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[0].defeatedCount
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[1].defeatedCount
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[2].defeatedCount
@@ -12423,11 +12423,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[0].zombieTypes.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[1].zombieTypes.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[2].zombieTypes.Array.size
@@ -12436,11 +12436,11 @@ PrefabInstance:
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[0].zombieTypes.Array.data[0].type
       value: 
-      objectReference: {fileID: 11400000, guid: 7c113d6b25f91a4469ce3ba4ea616e57, type: 2}
+      objectReference: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[0].zombieTypes.Array.data[1].type
       value: 
-      objectReference: {fileID: 11400000, guid: 6ab58780877c86442932d8e97bea9cb1, type: 2}
+      objectReference: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[0].zombieTypes.Array.data[2].type
       value: 
@@ -12452,11 +12452,11 @@ PrefabInstance:
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[1].zombieTypes.Array.data[0].type
       value: 
-      objectReference: {fileID: 11400000, guid: 15843869bb364104db036b5a45a0943e, type: 2}
+      objectReference: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[1].zombieTypes.Array.data[1].type
       value: 
-      objectReference: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
+      objectReference: {fileID: 11400000, guid: 15843869bb364104db036b5a45a0943e, type: 2}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[1].zombieTypes.Array.data[2].type
       value: 
@@ -12487,11 +12487,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[1].zombieTypes.Array.data[0].probability
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[1].zombieTypes.Array.data[1].probability
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[1].zombieTypes.Array.data[2].probability
@@ -29294,7 +29294,7 @@ MonoBehaviour:
   tileMask:
     serializedVersion: 2
     m_Bits: 64
-  suns: 9999
+  suns: 100
   sunText: {fileID: 1401474810}
   sunMask:
     serializedVersion: 2
@@ -30785,7 +30785,7 @@ Transform:
   m_GameObject: {fileID: 1958785200}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.474038, y: -0.10190535, z: 2.83295}
+  m_LocalPosition: {x: 0.68, y: 15.86, z: 2.83295}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

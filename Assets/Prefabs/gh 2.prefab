@@ -112,6 +112,12 @@ MonoBehaviour:
     m_Bits: 512
   snowAudio: {fileID: 8300000, guid: 9800876d260906e49aac82c6de7c4109, type: 3}
   sunPrefab: {fileID: 8941859066562654438, guid: 86305705410e92b4ab00c95af8c042ae, type: 3}
+  Witch: 0
+  Rugby: 0
+  hasCollided: 0
+  GhosthitSound: {fileID: 8300000, guid: 67ed54d31fbe0e34f88aecc7ec644959, type: 3}
+  ScreamAudio: {fileID: 0}
+  ScreamSound: 0
 --- !u!61 &2364163317398186655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -190,7 +196,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0

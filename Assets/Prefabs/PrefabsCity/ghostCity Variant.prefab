@@ -10,23 +10,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 218283880018193697, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.9218416
+      value: 2.2010121
       objectReference: {fileID: 0}
     - target: {fileID: 218283880018193697, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
       propertyPath: m_LocalScale.y
-      value: 1.9218416
+      value: 2.2010121
       objectReference: {fileID: 0}
     - target: {fileID: 218283880018193697, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.7904452
+      value: 2.0505288
       objectReference: {fileID: 0}
     - target: {fileID: 218283880018193697, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.9258
+      value: 8.2486
       objectReference: {fileID: 0}
     - target: {fileID: 218283880018193697, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.1684
+      value: 0.1631
       objectReference: {fileID: 0}
     - target: {fileID: 218283880018193697, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -61,17 +61,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2364163317398186655, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
+      propertyPath: m_Size.x
+      value: 2.3830786
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364163317398186655, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
       propertyPath: m_Size.y
-      value: 2.398263
+      value: 1.8669026
+      objectReference: {fileID: 0}
+    - target: {fileID: 2364163317398186655, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.032297313
       objectReference: {fileID: 0}
     - target: {fileID: 2364163317398186655, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
       propertyPath: m_Offset.y
-      value: 0.014964402
+      value: 0.056913853
       objectReference: {fileID: 0}
     - target: {fileID: 2694313112654321143, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
       propertyPath: m_Name
       value: ghostCity Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5471452526342564332, guid: 7e13f7aead57d254383ea6636e82e40a, type: 3}
+      propertyPath: type
+      value: 
+      objectReference: {fileID: 11400000, guid: ee12f4d675b54fd458b7e30fff276601, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

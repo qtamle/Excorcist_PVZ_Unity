@@ -30,8 +30,8 @@ Transform:
   m_GameObject: {fileID: 2694313112654321143}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.5407, y: -2.0769, z: 0}
-  m_LocalScale: {x: 0.41112003, y: 0.41112003, z: 0.41112003}
+  m_LocalPosition: {x: 6.8011, y: -2.3554, z: 0}
+  m_LocalScale: {x: 5.352616, y: 5.352616, z: 5.352616}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,8 +77,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 21300000, guid: 5f2512463a6043f4e86f9ee7d8bd938b, type: 3}
-  m_Color: {r: 0.9559748, g: 0.9556982, b: 0.9469561, a: 1}
+  m_Sprite: {fileID: -1028240781447473825, guid: 81edf0951c8ad4345849e9da967b2bb6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -113,6 +113,11 @@ MonoBehaviour:
   snowAudio: {fileID: 8300000, guid: 9800876d260906e49aac82c6de7c4109, type: 3}
   sunPrefab: {fileID: 8941859066562654438, guid: 86305705410e92b4ab00c95af8c042ae, type: 3}
   Witch: 1
+  Rugby: 0
+  hasCollided: 0
+  GhosthitSound: {fileID: 8300000, guid: 67ed54d31fbe0e34f88aecc7ec644959, type: 3}
+  ScreamAudio: {fileID: 8300000, guid: 773c88465ab93544fb132195e80a8bfe, type: 3}
+  ScreamSound: 1
 --- !u!61 &2364163317398186655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -145,18 +150,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.08189595, y: 0.2008326}
+  m_Offset: {x: -0.0023041666, y: 0.013975073}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.15, y: 5.62}
+    pivot: {x: 0.48358932, y: 0.4127871}
+    oldSize: {x: 0.48, y: 0.48}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.6582184, y: 3.8579993}
+  m_Size: {x: 0.33064663, y: 0.2695506}
   m_EdgeRadius: 0
 --- !u!95 &1512592277546410068
 Animator:
@@ -191,7 +196,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0

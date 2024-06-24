@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1512592277546410068}
   - component: {fileID: -5425218106081821789}
   - component: {fileID: -7097515336645880690}
+  - component: {fileID: 7825560291596801672}
   m_Layer: 7
   m_Name: gh
   m_TagString: Ghost
@@ -102,7 +103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
-  speed: 0.01
+  speed: 0.03
   health: 15
   range: 0.5
   damage: 2
@@ -113,6 +114,12 @@ MonoBehaviour:
     m_Bits: 512
   snowAudio: {fileID: 8300000, guid: 9800876d260906e49aac82c6de7c4109, type: 3}
   sunPrefab: {fileID: 8941859066562654438, guid: 86305705410e92b4ab00c95af8c042ae, type: 3}
+  Witch: 0
+  Rugby: 0
+  hasCollided: 0
+  GhosthitSound: {fileID: 8300000, guid: 67ed54d31fbe0e34f88aecc7ec644959, type: 3}
+  ScreamAudio: {fileID: 0}
+  ScreamSound: 1
 --- !u!61 &2364163317398186655
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -191,7 +198,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -337,3 +344,26 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &7825560291596801672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2694313112654321143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_RenderingLayers: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_ShadowRenderingLayers: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 0

@@ -27,11 +27,20 @@ public class Zombie : MonoBehaviour
 
     private Color hitColor;
 
+    private Color colorAngry;
+
     public bool Witch = false;
-     
+
     public bool Rugby = true;
 
     public bool hasCollided = false;
+
+    public AudioClip GhosthitSound;
+
+    public AudioClip ScreamAudio;
+
+    public bool ScreamSound = true;
+
     private void Start()
     {
         health = type.health;
@@ -45,6 +54,7 @@ public class Zombie : MonoBehaviour
         originalColor = GetComponent<SpriteRenderer>().color;
 
         hitColor = new Color(241f / 255f, 117f / 255f, 134f / 255f);
+        colorAngry = new Color(156f / 255f, 0f / 255f, 255f / 255f);
 
         if (Rugby)
         {
@@ -72,6 +82,10 @@ public class Zombie : MonoBehaviour
         canEat = false;
         Invoke("ResetEatCooldown", eatCooldown);
         targetPlant.Hit(damage);
+        if (audioSource != null && GhosthitSound != null)
+        {
+            audioSource.PlayOneShot(GhosthitSound);
+        }
 
         if (Rugby && !hasCollided)
         {
@@ -82,7 +96,6 @@ public class Zombie : MonoBehaviour
             hasCollided = true;
         }
     }
-
 
     void ResetEatCooldown()
     {
@@ -99,7 +112,7 @@ public class Zombie : MonoBehaviour
     {
         health -= incomingDamage;
 
-        if (!freeze && !isFrozen)
+        if (!freeze && !isFrozen && !(Witch && health <= 15))
         {
             StartCoroutine(ChangeColorGhost());
         }
@@ -119,14 +132,20 @@ public class Zombie : MonoBehaviour
 
         if (Witch && health > 0 && health <= 15)
         {
+            GetComponent<SpriteRenderer>().color = colorAngry; // Chuyển màu sang colorAngry
             IncreaseStats(incomingDamage);
+            if (audioSource != null && ScreamAudio != null && ScreamSound)
+            {
+                audioSource.PlayOneShot(ScreamAudio);
+                ScreamSound = false;
+            }
         }
     }
 
     private void IncreaseStats(float damageAmount)
     {
         float increaseFactor = damageAmount / 15.0f;
-        speed += type.speed * increaseFactor * 2f; 
+        speed += type.speed * increaseFactor * 2f;
         damage += type.damage * increaseFactor * 5f;
     }
 
@@ -135,7 +154,15 @@ public class Zombie : MonoBehaviour
         SpriteRenderer spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = hitColor;
         yield return new WaitForSeconds(0.1f);
-        spriteRenderer.color = isFrozen ? Color.blue : originalColor;
+
+        if (!Witch || health > 15) // Chỉ thay đổi màu nếu không phải Witch hoặc máu trên 15
+        {
+            spriteRenderer.color = isFrozen ? Color.blue : originalColor;
+        }
+        else // Giữ màu colorAngry nếu là Witch và máu dưới hoặc bằng 15
+        {
+            spriteRenderer.color = colorAngry;
+        }
     }
 
     void Freeze()
@@ -151,8 +178,24 @@ public class Zombie : MonoBehaviour
 
     void UnFreeze()
     {
-        GetComponent<SpriteRenderer>().color = originalColor;
-        speed = type.speed;
+        if (Witch && health <= 15)
+        {
+            GetComponent<SpriteRenderer>().color = colorAngry;
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().color = originalColor;
+        }
+
+        if (Rugby && !hasCollided)
+        {
+            speed = 0.1f;
+        }
+        else
+        {
+            speed = type.speed;
+        }
+
         isFrozen = false;
     }
 
