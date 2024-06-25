@@ -17,6 +17,7 @@ public class ZombieSpawner : MonoBehaviour
     public AudioClip zombieSpawnAudio;
     public AudioClip zombieComing;
     public Image centerImage;
+    public Image finalWaveImage;  // Thêm biến cho hình ảnh mới
 
     private AudioSource audioSource;
     private bool firstZombieSpawned = false;
@@ -24,7 +25,11 @@ public class ZombieSpawner : MonoBehaviour
     private Animator animator;
 
     public GameObject giftPrefab;
+    public GameObject readyPrefab;
+    public GameObject setPrefab;
+    public GameObject plantPrefab;
 
+    public AudioClip readySound;
     private bool gameEnded = false;
 
     private void Start()
@@ -33,8 +38,8 @@ public class ZombieSpawner : MonoBehaviour
         HideCenterImage();
         animator = GetComponent<Animator>();
 
-        // Khởi động wave đầu tiên
-        StartNextWave();
+        // Khởi động wave đầu tiên sau khi hiển thị "Ready", "Set", "Plant"
+        StartCoroutine(DisplayReadySetPlantAndStartWave());
     }
 
     private void Update()
@@ -65,16 +70,62 @@ public class ZombieSpawner : MonoBehaviour
         progressBar.maxValue = waveGhosts[currentWaveIndex].defeatedCount;
         InvokeRepeating("SpawnZombie", 10, zombieDelay);
 
-        if (centerImage != null)
+        // Kiểm tra xem có phải wave cuối cùng không
+        if (currentWaveIndex == waveGhosts.Length - 1)
         {
-            centerImage.gameObject.SetActive(true);
-            StartCoroutine(HideCenterImageAfterDelay(3f));
+            // Hiển thị hình ảnh hoặc prefab đặc biệt cho wave cuối
+            if (finalWaveImage != null)
+            {
+                finalWaveImage.gameObject.SetActive(true);
+                StartCoroutine(HideImageAfterDelay(finalWaveImage, 3f));
+            }
+        }
+        else
+        {
+            if (centerImage != null)
+            {
+                centerImage.gameObject.SetActive(true);
+                StartCoroutine(HideCenterImageAfterDelay(3f));
+            }
+
+            if (currentWaveIndex > 0 && audioSource != null && zombieComing != null)
+            {
+                audioSource.PlayOneShot(zombieComing);
+            }
+        }
+    }
+
+    IEnumerator DisplayReadySetPlantAndStartWave()
+    {
+        Vector3 centerPosition = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, Camera.main.nearClipPlane));
+        centerPosition.z = 0;
+
+        if (audioSource != null && readySound != null)
+        {
+            audioSource.PlayOneShot(readySound);
+        }
+        if (readyPrefab != null)
+        {
+            GameObject ready = Instantiate(readyPrefab, centerPosition, Quaternion.identity);
+            yield return new WaitForSeconds(0.5f);
+            Destroy(ready);
         }
 
-        if (currentWaveIndex > 0 && audioSource != null && zombieComing != null)
+        if (setPrefab != null)
         {
-            audioSource.PlayOneShot(zombieComing);
+            GameObject set = Instantiate(setPrefab, centerPosition, Quaternion.identity);
+            yield return new WaitForSeconds(0.5f);
+            Destroy(set);
         }
+
+        if (plantPrefab != null)
+        {
+            GameObject plant = Instantiate(plantPrefab, centerPosition, Quaternion.identity);
+            yield return new WaitForSeconds(1f);
+            Destroy(plant);
+        }
+
+        StartNextWave();
     }
 
     void SpawnZombie()
@@ -175,11 +226,19 @@ public class ZombieSpawner : MonoBehaviour
         }
     }
 
-
     IEnumerator HideCenterImageAfterDelay(float delay)
     {
         yield return new WaitForSeconds(delay);
         HideCenterImage();
+    }
+
+    IEnumerator HideImageAfterDelay(Image image, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        if (image != null)
+        {
+            image.gameObject.SetActive(false);
+        }
     }
 
     void HideCenterImage()

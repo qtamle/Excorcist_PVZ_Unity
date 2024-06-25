@@ -1289,7 +1289,7 @@ MonoBehaviour:
   tileMask:
     serializedVersion: 2
     m_Bits: 64
-  suns: 99999
+  suns: 500
   sunText: {fileID: 1401474810}
   sunMask:
     serializedVersion: 2
@@ -4934,7 +4934,7 @@ MonoBehaviour:
   plantObject: {fileID: 6408441885756010075, guid: b0ff258222b56c345aebb2761102e20e, type: 3}
   icon: {fileID: 86496246}
   price: 350
-  coolDown: 0
+  coolDown: 20
   priceText: {fileID: 2130058824}
   cooldownOverlay: {fileID: 471126368}
   cooldownAudioClip: {fileID: 8300000, guid: 2170489a021f47b44aa4764065e5ec58, type: 3}
@@ -5747,7 +5747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.61
+      value: -15.670002
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5822,7 +5822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   music: {fileID: 1928438708}
   vfx: {fileID: 1229618460}
-  musicMain: {fileID: 8300000, guid: c07513883e72d224aafa7500db8c5aea, type: 3}
+  musicMain: {fileID: 8300000, guid: baff033a4610f0045b0390e75a67e415, type: 3}
 --- !u!4 &956178310
 Transform:
   m_ObjectHideFlags: 0
@@ -5854,7 +5854,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -6477,7 +6477,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 13.17
+  orthographic size: 15.0316515
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -6502,7 +6502,7 @@ Transform:
   m_GameObject: {fileID: 1063765001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32, y: -0.24, z: -5}
+  m_LocalPosition: {x: -3.16, y: -0.24, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9290,17 +9290,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
+      propertyPath: setPrefab
+      value: 
+      objectReference: {fileID: 3952369052428597241, guid: 1dd0dca4610cc6040af1d5e66affc6d9, type: 3}
+    - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: giftPrefab
       value: 
       objectReference: {fileID: 2578364266747311513, guid: 7e7a77e9551a2ac4e9fa0ea38c9c2727, type: 3}
+    - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
+      propertyPath: readySound
+      value: 
+      objectReference: {fileID: 8300000, guid: 00ff2e077560223419ea3f71c3d3e21c, type: 3}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: centerImage
       value: 
       objectReference: {fileID: 377293411}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
+      propertyPath: plantPrefab
+      value: 
+      objectReference: {fileID: 6620199403568643556, guid: 6a3b517b4a6e18545ac1aa914320a2c3, type: 3}
+    - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: progressBar
       value: 
       objectReference: {fileID: 1768095696}
+    - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
+      propertyPath: readyPrefab
+      value: 
+      objectReference: {fileID: 174098734952353526, guid: b61996958c55a8a49a6159f6be93d2a5, type: 3}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: zombieDelay
       value: 5
@@ -9363,11 +9379,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[3].defeatedCount
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[4].defeatedCount
-      value: 20
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: waveGhosts.Array.data[0].zombieTypes.Array.size
@@ -15111,7 +15127,7 @@ Transform:
   m_GameObject: {fileID: 1405784654}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6981327, y: -0.1547722, z: 0.15129977, w: -0.68246955}
-  m_LocalPosition: {x: -6.1911674, y: 13.3, z: 16.6}
+  m_LocalPosition: {x: -6.19, y: 13.02, z: 16.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16783,7 +16799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.52
+      value: -15.580002
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -17747,7 +17763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.52
+      value: -15.580002
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -18550,7 +18566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.69
+      value: -15.750002
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.y
@@ -19955,7 +19971,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -19.46
+      value: -15.52
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.y

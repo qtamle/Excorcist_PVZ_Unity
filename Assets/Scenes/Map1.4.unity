@@ -13030,17 +13030,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1069103960}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
+      propertyPath: setPrefab
+      value: 
+      objectReference: {fileID: 3952369052428597241, guid: 1dd0dca4610cc6040af1d5e66affc6d9, type: 3}
+    - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: giftPrefab
       value: 
       objectReference: {fileID: 7270218661924897836, guid: b74adf87407ce684d9aca14da2531269, type: 3}
+    - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
+      propertyPath: readySound
+      value: 
+      objectReference: {fileID: 8300000, guid: 00ff2e077560223419ea3f71c3d3e21c, type: 3}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: centerImage
       value: 
       objectReference: {fileID: 377293411}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
+      propertyPath: plantPrefab
+      value: 
+      objectReference: {fileID: 6620199403568643556, guid: 6a3b517b4a6e18545ac1aa914320a2c3, type: 3}
+    - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: progressBar
       value: 
       objectReference: {fileID: 1768095696}
+    - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
+      propertyPath: readyPrefab
+      value: 
+      objectReference: {fileID: 174098734952353526, guid: b61996958c55a8a49a6159f6be93d2a5, type: 3}
     - target: {fileID: 1114339246475486195, guid: 5eb1764d73d5b0a4fad6dabba21e28db, type: 3}
       propertyPath: zombieDelay
       value: 7

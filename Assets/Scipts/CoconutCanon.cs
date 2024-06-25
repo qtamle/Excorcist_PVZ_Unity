@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class CoconutCanon : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class CoconutCanon : MonoBehaviour
     private Animator animator;
     private AudioSource audioSource;
     public AudioClip shootSound;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
