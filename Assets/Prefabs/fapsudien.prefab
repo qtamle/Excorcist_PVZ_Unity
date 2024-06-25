@@ -62,8 +62,8 @@ Transform:
   m_GameObject: {fileID: 6408441885756010075}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.371, y: -2.4943, z: 0}
-  m_LocalScale: {x: 1.0795767, y: 1.0795767, z: 1.0795767}
+  m_LocalPosition: {x: -2.8657, y: -2.1221, z: 0}
+  m_LocalScale: {x: 1.7442721, y: 1.7442721, z: 1.7442721}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4179091495644339327}
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 424afbce8e7269748b9b3633507b7411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 38298770887038846, guid: 5dcfa2830fc2654458a13c7253b61a4d, type: 3}
+  bulletPrefab: {fileID: 4737239822107008358, guid: 86684a68df4eaf245bbd95dda9a4ce60, type: 3}
   bulletSpawnPoint: {fileID: 4179091495644339327}
   cooldownTime: 10
   targetLayer:
@@ -206,7 +206,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.1457541, y: 0.2201606}
+  m_Offset: {x: -0.21158767, y: 0.21376026}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.6401134, y: 0.3445666}
@@ -217,7 +217,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.4645317, y: 1.7723563}
+  m_Size: {x: 1.3969052, y: 1.1350858}
   m_EdgeRadius: 0
 --- !u!82 &5994427850829118528
 AudioSource:

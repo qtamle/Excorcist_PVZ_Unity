@@ -2700,7 +2700,7 @@ Transform:
   m_GameObject: {fileID: 382771220}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 17.05, y: -1.85, z: 0}
+  m_LocalPosition: {x: 14.89, y: -1.85, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18099,8 +18099,8 @@ Camera:
   m_GameObject: {fileID: 1063765001}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0.32941177, g: 0.52156866, b: 0.227451, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -18125,7 +18125,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.297218
+  orthographic size: 9.865726
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -18150,7 +18150,7 @@ Transform:
   m_GameObject: {fileID: 1063765001}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.32, y: -0.24, z: -5}
+  m_LocalPosition: {x: 0.41, y: -0.12, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26379,7 +26379,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.36
+      value: -13.24
       objectReference: {fileID: 0}
     - target: {fileID: 6073101159187143443, guid: 971b1e1a44a474f4893cd47cddd6fda6, type: 3}
       propertyPath: m_LocalPosition.y

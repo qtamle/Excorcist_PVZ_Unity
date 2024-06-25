@@ -301,7 +301,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7683591276221034443, guid: 494f349a5531203488e0d756a092f1ea, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7
+      value: -1.6999998
       objectReference: {fileID: 0}
     - target: {fileID: 7683591276221034443, guid: 494f349a5531203488e0d756a092f1ea, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1289,7 +1289,7 @@ MonoBehaviour:
   tileMask:
     serializedVersion: 2
     m_Bits: 64
-  suns: 500
+  suns: 99999
   sunText: {fileID: 1401474810}
   sunMask:
     serializedVersion: 2
@@ -4931,10 +4931,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plantSprite: {fileID: -7725866345295559466, guid: 29f36c42a32c81b419172b58c1fbaa94, type: 3}
-  plantObject: {fileID: 1711449958630666067, guid: fc9355506d68dea449967f4d412e1f63, type: 3}
+  plantObject: {fileID: 6408441885756010075, guid: b0ff258222b56c345aebb2761102e20e, type: 3}
   icon: {fileID: 86496246}
   price: 350
-  coolDown: 20
+  coolDown: 0
   priceText: {fileID: 2130058824}
   cooldownOverlay: {fileID: 471126368}
   cooldownAudioClip: {fileID: 8300000, guid: 2170489a021f47b44aa4764065e5ec58, type: 3}
@@ -6134,7 +6134,7 @@ MonoBehaviour:
   plantObject: {fileID: 4296774521876277042, guid: 28c85bccf502483458f7d3b16e20f94c, type: 3}
   icon: {fileID: 645998248}
   price: 200
-  coolDown: 15
+  coolDown: 25
   priceText: {fileID: 1595963368}
   cooldownOverlay: {fileID: 1680056551}
   cooldownAudioClip: {fileID: 8300000, guid: 2170489a021f47b44aa4764065e5ec58, type: 3}
@@ -20020,8 +20020,8 @@ SceneRoots:
   - {fileID: 1958785202}
   - {fileID: 1348045431}
   - {fileID: 2009435583}
-  - {fileID: 21334584}
   - {fileID: 249077772}
+  - {fileID: 21334584}
   - {fileID: 1337693553}
   - {fileID: 1591892208}
   - {fileID: 158025664}

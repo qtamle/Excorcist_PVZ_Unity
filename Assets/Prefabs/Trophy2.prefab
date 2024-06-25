@@ -148,6 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundWin: {fileID: 8300000, guid: a8142efecef98694d8a00faa0460f740, type: 3}
   fireworksEffect: {fileID: -6254156894987326289}
+  nextScene: MainMenu
 --- !u!82 &7278502903844816010
 AudioSource:
   m_ObjectHideFlags: 0

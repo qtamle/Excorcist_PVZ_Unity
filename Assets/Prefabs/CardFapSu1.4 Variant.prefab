@@ -58,7 +58,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9116896189694215515, guid: 6de0a81456cc1504f9b49ee02b3ae6b6, type: 3}
       propertyPath: nextScene
-      value: Map2
+      value: CardSonGoKuSCene
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

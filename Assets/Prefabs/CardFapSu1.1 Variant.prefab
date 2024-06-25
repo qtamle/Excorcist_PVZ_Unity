@@ -18,7 +18,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2016997311484897335, guid: 7e7a77e9551a2ac4e9fa0ea38c9c2727, type: 3}
       propertyPath: nextScene
-      value: Map1.2
+      value: CardFapSufarmScene
       objectReference: {fileID: 0}
     - target: {fileID: 2578364266747311513, guid: 7e7a77e9551a2ac4e9fa0ea38c9c2727, type: 3}
       propertyPath: m_Name

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 481042743061845, guid: ac20683d4fb909c41bcc5cf2771f8c16, type: 3}
       propertyPath: nextScene
-      value: Map1.4
+      value: CardFapSuBang
       objectReference: {fileID: 0}
     - target: {fileID: 4049955960123519227, guid: ac20683d4fb909c41bcc5cf2771f8c16, type: 3}
       propertyPath: m_Name
