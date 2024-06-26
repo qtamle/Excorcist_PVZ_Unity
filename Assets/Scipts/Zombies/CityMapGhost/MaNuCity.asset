@@ -18,5 +18,5 @@ MonoBehaviour:
   deathSprite: {fileID: 0}
   range: 0.5
   eatCooldown: 1
-  speed: 0.01
+  speed: 0.02
   zombiePrefab: {fileID: 6111336348169702392, guid: 6189dbc4efbdb5f48ab070a601fdc97a, type: 3}

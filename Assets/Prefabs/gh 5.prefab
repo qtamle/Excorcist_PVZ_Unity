@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: -7097515336645880690}
   - component: {fileID: 7825560291596801672}
   m_Layer: 7
-  m_Name: gh
+  m_Name: gh 5
   m_TagString: Ghost
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -79,7 +79,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 6224631773077241828, guid: 8a2969dc4341bc64294d99e0d8908e7b, type: 3}
+  m_Sprite: {fileID: 2235463498415918113, guid: 31d71f99ed9a7e94b84395b07b7038e9, type: 3}
   m_Color: {r: 0.9559748, g: 0.9556982, b: 0.9469561, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,9 +102,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88a10b90f20aae0488c056ab02862709, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  type: {fileID: 11400000, guid: f3e54b0b85c6bdb41abd9918e578ea9a, type: 2}
+  type: {fileID: 11400000, guid: 651fcce96e11e0c429b2f560816bc26e, type: 2}
   speed: 0.01
-  health: 15
+  health: 40
   range: 0.5
   damage: 2
   eatCooldown: 0.5
@@ -175,7 +175,7 @@ Animator:
   m_GameObject: {fileID: 2694313112654321143}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: d120f2825fd0d854280e5433061bf0cd, type: 2}
+  m_Controller: {fileID: -3157941756166511777, guid: 31d71f99ed9a7e94b84395b07b7038e9, type: 3}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

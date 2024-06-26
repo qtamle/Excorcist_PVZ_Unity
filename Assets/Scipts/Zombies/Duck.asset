@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b3c3e69c7407cec47a2114aab411bb44, type: 3}
-  m_Name: RugbyCity
+  m_Name: Duck
   m_EditorClassIdentifier: 
   health: 40
   damage: 2
-  sprite: {fileID: 3629252678272692788, guid: 597b6a5dedf02a54c9beb1b3b0d14a47, type: 3}
+  sprite: {fileID: 2235463498415918113, guid: 31d71f99ed9a7e94b84395b07b7038e9, type: 3}
   deathSprite: {fileID: 0}
   range: 0.5
   eatCooldown: 1
-  speed: 0.02
-  zombiePrefab: {fileID: 7783720245495328336, guid: cefe98fcde72e964783488218d3c4f42, type: 3}
+  speed: 0.01
+  zombiePrefab: {fileID: 2694313112654321143, guid: 7cbe17502191bd445952d3d7984f2492, type: 3}
