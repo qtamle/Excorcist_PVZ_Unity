@@ -19,3 +19,8 @@ Cấp độ khó tăng dần: Game sẽ có nhiều cấp độ khó tăng dần
 Mục tiêu:
 
 Mục tiêu của dự án này là tạo ra một game chiến thuật 2D hấp dẫn, mang đến cho người chơi trải nghiệm giải trí thú vị và đầy thử thách. Game cũng sẽ là một bài tập thực hành hữu ích để học hỏi và áp dụng các kiến thức về Unity và lập trình game.
+
+Character: 
+-Fire Wizard, Ice Wizard, Spawn Point Wizard, Boom Slime, Defende Wizard, SON GOKU!!!!
+-Normal Ghost, Duck Ghost, Girl Ghost, one shot Ghost
+
